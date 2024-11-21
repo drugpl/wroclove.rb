@@ -4,7 +4,7 @@ watch-css:
 
 watch-html:
 	@npx chokidar-cli "src/**/*.html" \
-		-c "cp src/index.html dist/index.html" \
+		-c "cp src/*.{html,svg} dist/" \
 		--initial
 .PHONY: watch-html
 
@@ -21,7 +21,7 @@ build-css:
 .PHONY: build-css
 
 build-html:
-	@cp src/index.html dist/index.html
+	@cp src/*.{html,svg} dist/
 .PHONY: build-html
 
 build: build-css build-html
