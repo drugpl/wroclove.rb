@@ -8,8 +8,12 @@ watch-html:
 		--initial
 .PHONY: watch-html
 
+serve:
+	@ruby -run -e httpd dist/ -p 3000
+.PHONY: serve
+
 dev:
-	@$(MAKE) -j2 watch-css watch-html
+	@$(MAKE) -j3 watch-css watch-html serve
 .PHONY: dev
 
 build-css:
