@@ -21,6 +21,8 @@ build-css:
 .PHONY: build-css
 
 build-html:
+	@pwd
+	@ls -alR
 	@cp src/*.{html,svg,ico,png} dist/
 .PHONY: build-html
 
