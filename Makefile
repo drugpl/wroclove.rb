@@ -21,7 +21,7 @@ build-css:
 .PHONY: build-css
 
 build-html:
-	@env
+	@mkdir -p dist/
 	@cp src/*.{html,svg,ico,png} dist/
 .PHONY: build-html
 
