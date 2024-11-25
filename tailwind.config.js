@@ -1,6 +1,11 @@
 module.exports = {
   content: ["src/**/*.{html,js}"],
   theme: {
+    screens: {
+      'sm': '375px',
+      'md': '993px',
+      'lg': '1440px'
+    },
     extend: {
       fontFamily: {
         "overpass": ["Overpass", "sans-serif"],
