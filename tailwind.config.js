@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "overpass": ["Overpass", "sans-serif"],
+        "inter": ["Inter", "sans-serif"],
       },
       colors: {
         brand: "#ED1C25"
