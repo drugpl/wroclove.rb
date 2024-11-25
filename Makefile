@@ -1,15 +1,18 @@
+DST = dist/
+SRC = src/
+
 watch-css:
-	@npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch
+	@npx tailwindcss -i ./$(SRC)/style.css -o ./$(DST)/style.css --watch
 .PHONY: watch-css
 
 watch-html:
-	@npx chokidar-cli "src/**/*.html" \
-		-c "cp src/*.{html,svg,ico,png} dist/" \
+	@npx chokidar-cli "$(SRC)/**/*.html" \
+		-c "cp $(SRC)/*.{html,svg,ico,png} $(DST)" \
 		--initial
 .PHONY: watch-html
 
 serve:
-	@ruby -run -e httpd dist/ -p 3000
+	@ruby -run -e httpd $(DST) -p 3000
 .PHONY: serve
 
 dev:
@@ -17,12 +20,12 @@ dev:
 .PHONY: dev
 
 build-css:
-	@npx tailwindcss -i ./src/style.css -o ./dist/style.css
+	@npx tailwindcss -i ./$(SRC)/style.css -o ./$(DST)/style.css
 .PHONY: build-css
 
 build-html:
-	@mkdir -p dist/
-	@cp src/*.{html,svg,ico,png} dist/
+	@mkdir -p $(DST)
+	@cp $(SRC)/*.{html,svg,ico,png} $(DST)
 .PHONY: build-html
 
 build: build-css build-html
