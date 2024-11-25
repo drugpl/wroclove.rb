@@ -1,3 +1,4 @@
+SHELL = /bin/bash
 DST = dist
 SRC = src
 
@@ -24,9 +25,6 @@ build-css:
 .PHONY: build-css
 
 build-html:
-	@mkdir -p $(DST)
-	@echo $(SHELL)
-	@ls $(SRC)/*.{html,svg,ico,png}
 	@cp $(SRC)/*.{html,svg,ico,png} $(DST)
 .PHONY: build-html
 
