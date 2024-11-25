@@ -1,8 +1,6 @@
 [build]
-  base = "/"
   command = "make build"
   publish = "dist/"
-  ignore  = "false"
 
 [build.environment]
   NODE_VERSION = "20.10"
