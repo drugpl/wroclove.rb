@@ -1,5 +1,5 @@
-DST = dist/
-SRC = src/
+DST = dist
+SRC = src
 
 watch-css:
 	@npx tailwindcss -i ./$(SRC)/style.css -o ./$(DST)/style.css --watch
