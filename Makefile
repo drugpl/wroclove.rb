@@ -25,9 +25,8 @@ build-css:
 
 build-html:
 	@mkdir -p $(DST)
-	@pwd
-	@ls -a $(SRC)
-	@ls -a $(DST)
+	@echo $(SHELL)
+	@ls $(SRC)/*.{html,svg,ico,png}
 	@cp $(SRC)/*.{html,svg,ico,png} $(DST)
 .PHONY: build-html
 
