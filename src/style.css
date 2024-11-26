@@ -4,6 +4,6 @@
 
 @layer components {
   ._container {
-    @apply container mx-auto max-w-[1360px];
+    @apply container mx-4 max-w-[1360px] md:mx-8 lg:mx-auto;
   }
 }
