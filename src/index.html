@@ -338,21 +338,24 @@
 
     <div class="flex items-end justify-between bg-gradient-to-l from-white to-red-100/5 px-10 py-12">
       <div class="container mx-auto px-4 md:px-8 lg:max-w-[1360px] lg:px-0">
-        <div class="flex h-24 shrink grow basis-0 items-center justify-between">
-          <div class="flex w-3/5 flex-col items-start justify-start gap-3">
+        <div class="flex shrink grow flex-col items-center justify-between md:flex-row">
+          <div class="flex flex-col items-start justify-start gap-3 md:w-3/5">
             <div class="self-stretch font-overpass text-3xl font-bold leading-10 text-grey-logo">Join our mailing list</div>
             <div class="self-stretch font-inter text-base font-medium leading-normal text-grey-600">Sign up for our newsletter and read in our mind!</div>
           </div>
-          <div class="flex h-24 w-2/5 flex-col items-start justify-center gap-4">
-            <div class="flex items-center justify-start gap-4 self-stretch">
-              <div class="flex h-14 grow items-center justify-start gap-4 border border-grey-600 bg-white px-6 py-3">
-                <div class="font-overpass text-lg font-bold leading-loose text-grey-400">kowalski@gmail.com</div>
+          <div class="flex flex-col items-start justify-center gap-4 md:w-2/5">
+            <div class="flex flex-col items-center justify-start gap-4 self-stretch md:flex-row">
+              <div class="flex h-14 w-full grow items-center justify-start gap-4 border border-grey-600 bg-white">
+                <div class="px-6 font-overpass text-lg font-bold leading-loose text-grey-400">kowalski@gmail.com</div>
               </div>
-              <div class="flex h-14 shrink basis-0 items-center justify-center gap-4 border border-black px-4 py-3">
+              <div class="shrink grow self-stretch md:hidden">
+                <span class="font-inter text-xs font-medium leading-none text-grey-500">By clicking Sign Up you're confirming that you agree with our <span class="underline">Terms and Conditions</span>.</span>
+              </div>
+              <div class="flex h-14 w-full shrink items-center justify-center gap-4 border border-black">
                 <div class="text-nowrap font-inter text-lg font-bold leading-loose text-black">Sign in</div>
               </div>
             </div>
-            <div class="shrink grow basis-0 self-stretch">
+            <div class="self-stretc hidden shrink grow md:flex">
               <span class="font-inter text-xs font-medium leading-none text-grey-500">By clicking Sign Up you're confirming that you agree with our <span class="underline">Terms and Conditions</span>.</span>
             </div>
           </div>
