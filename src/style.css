@@ -1,9 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  ._container {
-    @apply container mx-4 md:mx-8 lg:mx-auto lg:max-w-[1360px];
-  }
-}
