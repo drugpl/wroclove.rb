@@ -383,15 +383,13 @@
       </div>
     </div>
 
-    <div class="flex h-72 items-center justify-start gap-6 bg-gradient-to-l from-white to-red-100/5 py-20">
+    <div class="flex items-center justify-start gap-6 bg-gradient-to-l from-white to-red-100/5 py-20">
       <div class="container mx-auto px-4 md:px-8 lg:max-w-[1360px] lg:px-0">
-        <div class="flex items-center justify-between self-stretch">
-          <div class="relative h-6 w-40">
-            <div class="absolute left-0 top-0 h-6 w-40">
-              <img class="h-6 self-stretch" src="logo.svg" />
-            </div>
+        <div class="flex flex-col items-center justify-between self-stretch md:flex-row">
+          <div class="h-6 w-40">
+            <img class="h-6 self-stretch" src="logo.svg" />
           </div>
-          <div class="flex items-center justify-start">
+          <div class="grid grid-cols-2 items-center justify-start md:flex-row">
             <div class="flex items-center justify-center gap-4 px-6 py-3">
               <div class="font-overpass text-base font-normal leading-normal text-black">For participants</div>
             </div>
@@ -412,7 +410,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-between self-stretch">
+        <div class="flex flex-col items-center justify-between self-stretch md:flex-row">
           <div class="flex items-center justify-start gap-6">
             <div class="flex items-center justify-center gap-4 py-3">
               <div class="font-overpass text-base font-normal leading-normal text-grey-600">Terms of service</div>
