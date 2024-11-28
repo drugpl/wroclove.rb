@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <link rel="me" href="https://ruby.social/@wrocloverb" />
+    <link rel="preload" href="https://prod.spline.design/hFXBmUjHZDirWQM2/scene.splinecode" as="fetch" />
 
     <script>
       function toggleNavigation() {
         ["navigation", "navigation-open", "navigation-close"].forEach((id) => document.getElementById(id).classList.toggle("hidden"));
       }
     </script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
   </head>
   <body class="font-overpass antialiased">
     <div class="h-24 items-center justify-center gap-40 border-b border-red-logo/30 bg-white py-5">
@@ -78,7 +80,7 @@
     </div>
 
     <div class="linear-gradient-r">
-      <div class="container_">
+      <div class="container_ relative">
         <div class="flex flex-col items-start justify-center gap-8 self-stretch py-8 lg:max-w-[720px]">
           <div class="flex flex-col items-start justify-start gap-5 self-stretch">
             <div class="flex items-center justify-center gap-2.5 border border-red-logo px-2 py-1">
@@ -95,6 +97,8 @@
               </div>
             </div>
           </div>
+          <spline-viewer class="absolute right-0 top-0 -z-10" url="https://prod.spline.design/hFXBmUjHZDirWQM2/scene.splinecode"></spline-viewer>
+
           <div class="button_ w-full">
             <div class="text-lg font-bold text-white">Call for papers</div>
             <!-- <div class="text-lg font-bold text-white">Buy tickets</div> -->
