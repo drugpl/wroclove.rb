@@ -8,7 +8,7 @@ watch-css:
 
 watch-html:
 	@npx chokidar-cli "$(SRC)/**/*.html" \
-		-c "cp $(SRC)/*.{html,svg,ico,png} $(DST)" \
+		-c "cp -r $(SRC)/*.{html,svg,ico,png} $(SRC)/partners $(DST)" \
 		--initial
 .PHONY: watch-html
 
@@ -25,7 +25,7 @@ build-css:
 .PHONY: build-css
 
 build-html:
-	@cp $(SRC)/*.{html,svg,ico,png} $(DST)
+	@cp -r $(SRC)/*.{html,svg,ico,png} $(SRC)/partners $(DST)
 .PHONY: build-html
 
 build: build-css build-html
