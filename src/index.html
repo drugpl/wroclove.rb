@@ -19,13 +19,18 @@
       }
     </script>
   </head>
-  <body class="font-overpass">
+  <body class="font-overpass antialiased">
     <div class="h-24 items-center justify-center gap-40 border-b border-red-logo/30 bg-white py-5">
       <div class="container_">
-        <div class="flex h-14 shrink grow basis-0 items-center justify-between">
-          <div class="flex w-28 flex-col items-start justify-between md:w-40">
-            <img class="h-6 self-stretch" src="logo.svg" />
+        <div class="flex h-14 shrink grow basis-0 items-center justify-between gap-6">
+          <div class="flex grow flex-col items-start justify-self-start md:w-40">
+            <img class="h-6" src="logo.svg" />
           </div>
+
+          <div class="button_ hidden justify-self-end sm:flex">
+            <div class="text-lg font-bold leading-relaxed text-white">Call for papers</div>
+          </div>
+
           <button class="h-14 w-14 md:hidden" onclick="toggleNavigation()" id="navigation-open">
             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.5 1H55.5V56H0.5V1Z" fill="black" />
@@ -74,15 +79,15 @@
 
     <div class="linear-gradient-r">
       <div class="container_">
-        <div class="flex max-w-[720px] flex-col items-start justify-center gap-8 self-stretch py-8">
+        <div class="flex flex-col items-start justify-center gap-8 self-stretch py-8 md:max-w-[720px]">
           <div class="flex flex-col items-start justify-start gap-5 self-stretch">
             <div class="flex items-center justify-center gap-2.5 border border-red-logo px-2 py-1">
               <div class="font-inter text-sm font-medium leading-tight text-red-logo">ON SITE</div>
             </div>
             <div class="flex flex-col items-start justify-start gap-5 self-stretch">
               <div class="flex flex-col items-start justify-start gap-3 self-stretch">
-                <div class="text-md font-medium uppercase leading-normal text-grey-600 md:text-xl md:leading-loose">11–13.04.2025 Wrocław</div>
-                <div class="self-stretch text-[40px] font-bold uppercase leading-[1.1] tracking-tighter text-grey-logo md:text-5xl md:leading-[1.125] md:tracking-tight">We want to <em>confront</em> ideas</div>
+                <div class="text-md font-medium uppercase leading-normal text-grey-600 sm:text-xl sm:leading-loose">11–13.04.2025 Wrocław</div>
+                <div class="self-stretch text-[40px] font-bold uppercase leading-[1.1] tracking-tighter text-grey-logo sm:text-5xl md:leading-[1.125] md:tracking-tight">We want to <em>confront</em> ideas</div>
               </div>
               <div class="text-md self-stretch font-inter font-medium leading-normal text-grey-600">
                 The place for Ruby professionals to confront ideas in a friendly atmosphere and mutual respect. Where covering deep topics is encouraged and meets a receptive audience. A relaxed, single&#8209;track and
@@ -101,10 +106,10 @@
       <div class="flex flex-col items-center justify-start gap-8 py-20">
         <div class="flex flex-col items-start justify-start gap-8 self-stretch">
           <div class="flex flex-col items-start justify-start gap-4">
-            <div class="text-3xl font-bold leading-10 text-grey-logo md:text-4xl">Conference topics</div>
+            <div class="text-3xl font-bold leading-10 text-grey-logo sm:text-4xl">Conference topics</div>
           </div>
           <div class="flex flex-col items-start justify-start gap-5 md:flex-row">
-            <div class="text-md self-stretch font-inter font-medium leading-normal text-grey-600 md:w-1/3">
+            <div class="text-md self-stretch font-inter font-medium leading-normal text-grey-600 sm:w-1/2 md:w-1/3">
               The place for Ruby professionals to confront ideas in a friendly atmosphere and mutual respect. Where covering deep topics is encouraged and meets a receptive audience. A relaxed, single-track and not-for-profit Ruby
               conference run by the local Ruby community.
             </div>
@@ -256,8 +261,8 @@
       <div class="flex flex-col items-center justify-start gap-8">
         <div class="self-stretch text-4xl font-bold leading-10 text-grey-logo">Last year memories</div>
         <div class="flex flex-col items-start justify-start gap-16 self-stretch">
-          <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch md:flex-row">
-            <div class="flex h-[400px] flex-col items-start justify-start gap-2 md:w-1/3">
+          <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-5 self-stretch md:flex-row md:gap-5">
+            <div class="flex h-[280px] flex-col items-start justify-start gap-2 md:h-[400px] md:w-1/3">
               <div class="flex grow items-center justify-start gap-4 self-stretch border border-red-logo/30 bg-white/40 p-4">
                 <div class="flex shrink grow basis-0 flex-col items-end justify-start gap-4 self-stretch">
                   <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-4 self-stretch">
@@ -281,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8 flex h-[400px] flex-col items-start justify-start gap-2 md:w-1/3">
+            <div class="flex h-[280px] flex-col items-start justify-start gap-2 md:mt-8 md:h-[400px] md:w-1/3">
               <div class="flex grow flex-col items-start justify-start gap-2 self-stretch">
                 <div class="flex grow flex-col items-start justify-center gap-4 self-stretch border border-red-logo/30 bg-white/40 p-4">
                   <div class="flex shrink grow basis-0 flex-col items-end justify-start gap-4 self-stretch">
@@ -307,7 +312,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex h-[400px] flex-col items-start justify-start gap-2 md:w-1/3">
+            <div class="flex h-[280px] flex-col items-start justify-start gap-2 md:h-[400px] md:w-1/3">
               <div class="flex shrink grow basis-0 flex-col items-start justify-center gap-4 self-stretch border border-red-logo/30 bg-white/40 p-4">
                 <div class="flex shrink grow basis-0 flex-col items-end justify-start gap-4 self-stretch">
                   <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-4 self-stretch">
