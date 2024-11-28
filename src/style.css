@@ -10,4 +10,12 @@
   .button_ {
     @apply flex h-14 items-center justify-center border border-black bg-black px-6;
   }
+
+  .linear-gradient-r {
+    @apply bg-gradient-to-r from-white to-red-100/5;
+  }
+
+  .linear-gradient-l {
+    @apply bg-gradient-to-l from-white to-red-100/5;
+  }
 }
