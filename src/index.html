@@ -21,7 +21,7 @@
     </script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
   </head>
-  <body class="font-overpass antialiased">
+  <body class="pointer-events-none font-overpass antialiased">
     <div class="h-24 items-center justify-center gap-40 border-b border-red-logo/30 bg-white py-5">
       <div class="container_">
         <div class="flex h-14 shrink grow basis-0 items-center justify-between gap-6">
@@ -79,10 +79,10 @@
       </div>
     </div>
 
-    <div class="linear-gradient-r">
-      <div class="container_ relative">
+    <div class="linear-gradient-r relative">
+      <div class="container_">
         <div class="flex flex-col items-start justify-center gap-8 self-stretch py-8 lg:max-w-[720px]">
-          <div class="flex flex-col items-start justify-start gap-5 self-stretch">
+          <div class="z-10 flex flex-col items-start justify-start gap-5 self-stretch">
             <div class="flex items-center justify-center gap-2.5 border border-red-logo px-2 py-1">
               <div class="font-inter text-sm font-medium leading-tight text-red-logo">ON SITE</div>
             </div>
@@ -97,9 +97,9 @@
               </div>
             </div>
           </div>
-          <spline-viewer class="absolute right-0 top-0 -z-10" url="https://prod.spline.design/hFXBmUjHZDirWQM2/scene.splinecode"></spline-viewer>
+          <spline-viewer class="pointer-events-auto absolute right-0 top-0 -z-10" url="https://prod.spline.design/hFXBmUjHZDirWQM2/scene.splinecode"></spline-viewer>
 
-          <div class="button_ w-full">
+          <div class="button_ z-10 w-full">
             <div class="text-lg font-bold text-white">Call for papers</div>
             <!-- <div class="text-lg font-bold text-white">Buy tickets</div> -->
           </div>
