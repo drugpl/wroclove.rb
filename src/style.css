@@ -4,7 +4,7 @@
 
 @layer components {
   .container_ {
-    @apply container mx-auto px-4 md:px-8 lg:max-w-[1360px] lg:px-0;
+    @apply container mx-auto max-w-full px-4 md:px-8 lg:max-w-[1360px] lg:px-0;
   }
 
   .button_ {
