@@ -1,0 +1,7 @@
+prune:
+  auto_prune: true
+  exclude: ["main.css", "main.css.map"]
+
+data_sources:
+  - type: filesystem
+    encoding: utf-8
