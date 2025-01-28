@@ -2,7 +2,7 @@
 
 ## Getting up to speed with development
 
-* running `make install dev` install necessary depndencies and starts watch-rebuild-reload loop
+* running `make setup dev` install necessary depndencies and starts watch-rebuild-reload loop
 
 * visit http://localost:3000 to see results
 
