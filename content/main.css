@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .container_ {
+    @apply container mx-auto max-w-full px-4 md:px-8 lg:max-w-[1360px] lg:px-0;
+  }
+
+  .button_ {
+    @apply flex h-14 items-center justify-center border border-black bg-black px-6;
+  }
+
+  .linear-gradient-r {
+    @apply bg-gradient-to-r from-white to-red-100/5;
+  }
+
+  .linear-gradient-l {
+    @apply bg-gradient-to-l from-white to-red-100/5;
+  }
+}
