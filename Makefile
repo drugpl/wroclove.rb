@@ -1,21 +1,32 @@
-dev: ## Start the development environment
-	@$(MAKE) -j16 nanoc css 
+SHELL = /bin/bash
+DST = dist
+SRC = src
 
-nanoc: ## Nanoc live preview
-	@env bin/nanoc live -L -e development
+watch-css:
+	@npx tailwindcss -i ./$(SRC)/style.css -o ./$(DST)/style.css --watch
+.PHONY: watch-css
 
-css: ## Compile CSS
-	@./bin/tailwindcss -i ./content/main.css -o ./output/main.css --watch
+watch-html:
+	@npx chokidar-cli "$(SRC)/**/*.html" \
+		-c "cp -r $(SRC)/*.{html,svg,ico,png} $(SRC)/{partners,supporters,speakers} $(DST)" \
+		--initial
+.PHONY: watch-html
 
-build: ## Production build
-	@./bin/nanoc compile -e production
-	@./bin/tailwindcss -i ./content/main.css -o ./output/main.css --minify
+serve:
+	@ruby -run -e httpd $(DST) -p 3000
+.PHONY: serve
 
-setup: ## Install dependencies
-	@bundle install
+dev:
+	@$(MAKE) -j3 watch-css watch-html serve
+.PHONY: dev
 
-help:
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = "(:|:[^:]*?## )"}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' | sort
-  
-.PHONY: help dev nanoc css
-.DEFAULT_GOAL := help
+build-css:
+	@npx tailwindcss -i ./$(SRC)/style.css -o ./$(DST)/style.css
+.PHONY: build-css
+
+build-html:
+	@cp -r $(SRC)/*.{html,svg,ico,png} $(SRC)/{partners,supporters,speakers} $(DST)
+.PHONY: build-html
+
+build: build-css build-html
+.PHONY: build

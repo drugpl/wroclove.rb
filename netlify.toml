@@ -1,6 +1,7 @@
 [build]
   command = "make build"
-  publish = "output/"
+  publish = "dist/"
 
 [build.environment]
-  RUBY_VERSION = "3.4.1"
+  NODE_VERSION = "v20.10.0"
+
