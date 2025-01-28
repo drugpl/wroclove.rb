@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .container_ {
     @apply container mx-auto max-w-full px-4 md:px-8 lg:max-w-[1360px] lg:px-0;
