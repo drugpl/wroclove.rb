@@ -1,14 +1,17 @@
-<div class="flex w-52 flex-col items-start justify-start gap-2">
+<% if photo %>
   <img class="h-52 self-stretch" src="<%= photo %>" />
-  <div class="flex h-16 flex-col items-start justify-start self-stretch">
-    <div class="self-stretch text-xl font-medium uppercase leading-loose text-grey-logo"><%= name %></div>
-    <div class="flex items-start justify-start gap-2 self-stretch">
-      <div class="flex h-6 w-6 items-center justify-center fill-grey-600">
-        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1.39976 13L-0.000244141 11.6L9.59976 2H0.999756V0H12.9998V12H10.9998V3.4L1.39976 13Z" fill="#231F20" />
-        </svg>
-      </div>
-      <div class="shrink grow basis-0 font-inter text-sm font-normal leading-tight text-grey-500"><%= title %></div>
+<% else %>
+  <div class="relative h-52 w-52 bg-grey-100"></div>
+<% end %>
+
+<div class="flex h-16 flex-col items-start justify-start self-stretch">
+  <div class="self-stretch text-xl font-medium uppercase leading-loose text-grey-logo"><%= name %></div>
+  <div class="flex items-start justify-start gap-2 self-stretch">
+    <div class="flex h-6 w-6 items-center justify-center fill-grey-600">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.39976 13L-0.000244141 11.6L9.59976 2H0.999756V0H12.9998V12H10.9998V3.4L1.39976 13Z" fill="#231F20" />
+      </svg>
     </div>
+    <div class="shrink grow basis-0 font-inter text-sm font-normal leading-tight text-grey-500"><%= title %></div>
   </div>
 </div>
