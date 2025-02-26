@@ -1,0 +1,55 @@
+<div class="pointer-events-auto h-24 items-center justify-center gap-40 border-b border-red-logo/30 bg-white py-5">
+
+  <div class="container_">
+    <div class="flex h-14 shrink grow basis-0 items-center justify-between gap-6">
+      <div class="flex grow flex-col items-start justify-self-start md:w-40">
+        <a href="/">
+          <img class="h-6" src="/logo.svg" />
+        </a>
+      </div>
+
+      <button class="h-14 w-14 md:hidden" onclick="toggleNavigation()" id="navigation-open">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 1H55.5V56H0.5V1Z" fill="black" />
+          <path d="M0.5 1H55.5V56H0.5V1Z" stroke="black" />
+          <path d="M37 24.25H19C18.59 24.25 18.25 23.91 18.25 23.5C18.25 23.09 18.59 22.75 19 22.75H37C37.41 22.75 37.75 23.09 37.75 23.5C37.75 23.91 37.41 24.25 37 24.25Z" fill="white" />
+          <path d="M37 29.25H19C18.59 29.25 18.25 28.91 18.25 28.5C18.25 28.09 18.59 27.75 19 27.75H37C37.41 27.75 37.75 28.09 37.75 28.5C37.75 28.91 37.41 29.25 37 29.25Z" fill="white" />
+          <path d="M37 34.25H19C18.59 34.25 18.25 33.91 18.25 33.5C18.25 33.09 18.59 32.75 19 32.75H37C37.41 32.75 37.75 33.09 37.75 33.5C37.75 33.91 37.41 34.25 37 34.25Z" fill="white" />
+        </svg>
+      </button>
+
+      <button class="hidden h-14 w-14 md:hidden" onclick="toggleNavigation()" id="navigation-close">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 0.5H55.5V55.5H0.5V0.5Z" fill="black" />
+          <path d="M0.5 0.5H55.5V55.5H0.5V0.5Z" stroke="black" />
+          <path d="M22.4 35L21 33.6L26.6 28L21 22.4L22.4 21L28 26.6L33.6 21L35 22.4L29.4 28L35 33.6L33.6 35L28 29.4L22.4 35Z" fill="white" />
+        </svg>
+      </button>
+
+      <div class="hidden items-center justify-start gap-10 text-md font-normal leading-normal text-black md:flex">
+        <!-- <div>For participants</div> -->
+        <a class="text-black text-base font-normal leading-normal" href="/supporters"">For supporters</a>
+        <!-- <div>For volunteers</div> -->
+        <!-- <div>Agenda</div> -->
+        <!-- <div>Buy ticket</div> -->
+        <%= link_to "Contact", "mailto:all@wrocloverb.com" %>
+        <!-- <div>FAQ</div> -->
+      </div>
+      <div class="button_ hidden md:flex">
+        <a href="https://forms.gle/ovGZU4hNUdPVq7mPA" class="text-lg font-bold leading-relaxed text-white">Call for papers</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container_ pointer-events-auto hidden" id="navigation">
+  <div class="flex flex-col items-start justify-start gap-8 bg-white px-8 py-12 text-md font-normal leading-normal text-black">
+    <!-- <div>For participants</div> -->
+    <a class="text-black text-base font-normal leading-normal" href="/supporters" onclick="toggleNavigation()">For supporters</a>
+    <!-- <div>For volunteers</div> -->
+    <!-- <div>Agenda</div> -->
+    <!-- <div>Buy ticket</div> -->
+    <%= link_to "Contact", "mailto:all@wrocloverb.com" %>
+    <!-- <div>FAQ</div> -->
+  </div>
+</div>
