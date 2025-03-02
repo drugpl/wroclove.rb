@@ -11,7 +11,7 @@ def speakers
     speaker.new(name: "Szymon Fiedler", title: "Rewrite with confidence: validating business rules through isolated testing", photo: "speakers/szymon-fiedler.png"),
     speaker.new(name: "Mateusz Nowak", title: "Might & Magic of Domain-Driven Design through the lens of Heroes III", photo: "speakers/mateusz-nowak.png"),
     speaker.new(name: "John Gallagher", title: "Fix Production Bugs 20x Faster — The Power of Structured Logging", photo: "speakers/john-gallagher.webp"),
-    speaker.new(name: "Wojtek Wrona", title: "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs", photo: nil),
+    speaker.new(name: "Wojtek Wrona", title: "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs", photo: "speakers/wojtek-wrona.jpg"),
     speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
     speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
     speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
