@@ -4,7 +4,7 @@ use_helper Nanoc::Helpers::Rendering
 def speakers
   speaker = Data.define(:name, :title, :photo)
   [
-    speaker.new(name: "Adam Dymitruk", title: "Event Modelling from Beginner to Expert", photo: "speakers/adam-dymitruk.jpg"),
+    speaker.new(name: "Adam Dymitruk", title: "Event Modeling from Beginner to Expert", photo: "speakers/adam-dymitruk.jpg"),
     speaker.new(name: "Joel Drapper", title: "Ruby has literally always had types", photo: "speakers/joel-drapper.png"),
     speaker.new(name: "Stephen Margheim", title: "On the tasteful journey to Yippee", photo: "speakers/stephen-margheim.png"),
     speaker.new(name: "Norbert Wójtowicz", title: "Gregorian Calendar — lessons learned maintaining 3000-year old codebase", photo: "speakers/norbert-wojtowicz.png"),
