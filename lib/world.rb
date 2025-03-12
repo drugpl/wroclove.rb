@@ -7,35 +7,35 @@ def speakers
     speaker.new(
       name: "Adam Dymitruk",
       title: "Event Modeling from Beginner to Expert",
-      photo: "speakers/adam-dymitruk.avif"
+      photo: "speakers/adam-dymitruk.webp"
     ),
     speaker.new(
       name: "Joel Drapper",
       title: "Ruby has literally always had types",
-      photo: "speakers/joel-drapper.avif"
+      photo: "speakers/joel-drapper.webp"
     ),
     speaker.new(
       name: "Stephen Margheim",
       title: "On the tasteful journey to Yippee",
-      photo: "speakers/stephen-margheim.avif"
+      photo: "speakers/stephen-margheim.webp"
     ),
     speaker.new(
       name: "Norbert Wójtowicz",
       title:
         "Gregorian Calendar — lessons learned maintaining 3000-year old codebase",
-      photo: "speakers/norbert-wojtowicz.avif"
+      photo: "speakers/norbert-wojtowicz.webp"
     ),
     speaker.new(
       name: "Szymon Fiedler",
       title:
         "Rewrite with confidence: validating business rules through isolated testing",
-      photo: "speakers/szymon-fiedler.avif"
+      photo: "speakers/szymon-fiedler.webp"
     ),
     speaker.new(
       name: "Mateusz Nowak",
       title:
         "Might & Magic of Domain-Driven Design through the lens of Heroes III",
-      photo: "speakers/mateusz-nowak.avif"
+      photo: "speakers/mateusz-nowak.webp"
     ),
     speaker.new(
       name: "John Gallagher",
@@ -46,12 +46,12 @@ def speakers
       name: "Wojtek Wrona",
       title:
         "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs",
-      photo: "speakers/wojtek-wrona.avif"
+      photo: "speakers/wojtek-wrona.webp"
     ),
     speaker.new(
       name: "Yatish Mehta",
       title: "No 'Pundit' Intended: 'Tuple' the Power of Rails Authorization",
-      photo: "speakers/yatish-mehta.avif"
+      photo: "speakers/yatish-mehta.webp"
     ),
     speaker.new(
       name: "Mysterious speaker",

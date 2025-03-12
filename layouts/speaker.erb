@@ -1,5 +1,8 @@
 <% if photo %>
-  <img class="h-52 self-stretch" src="<%= photo %>" />
+  <picture>
+    <source srcset="<%= photo.sub('.webp', '.avif') %>" type="image/avif" />
+    <img class="h-52 self-stretch" src="<%= photo %>" />
+  </picture>
 <% else %>
   <div class="relative h-52 w-52 bg-grey-100"></div>
 <% end %>
