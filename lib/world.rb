@@ -4,18 +4,74 @@ use_helper Nanoc::Helpers::Rendering
 def speakers
   speaker = Data.define(:name, :title, :photo)
   [
-    speaker.new(name: "Adam Dymitruk", title: "Event Modeling from Beginner to Expert", photo: "speakers/adam-dymitruk.jpg"),
-    speaker.new(name: "Joel Drapper", title: "Ruby has literally always had types", photo: "speakers/joel-drapper.png"),
-    speaker.new(name: "Stephen Margheim", title: "On the tasteful journey to Yippee", photo: "speakers/stephen-margheim.png"),
-    speaker.new(name: "Norbert Wójtowicz", title: "Gregorian Calendar — lessons learned maintaining 3000-year old codebase", photo: "speakers/norbert-wojtowicz.png"),
-    speaker.new(name: "Szymon Fiedler", title: "Rewrite with confidence: validating business rules through isolated testing", photo: "speakers/szymon-fiedler.png"),
-    speaker.new(name: "Mateusz Nowak", title: "Might & Magic of Domain-Driven Design through the lens of Heroes III", photo: "speakers/mateusz-nowak.png"),
-    speaker.new(name: "John Gallagher", title: "Fix Production Bugs 20x Faster — The Power of Structured Logging", photo: "speakers/john-gallagher.webp"),
-    speaker.new(name: "Wojtek Wrona", title: "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs", photo: "speakers/wojtek-wrona.jpg"),
-    speaker.new(name: "Yatish Mehta", title: "No 'Pundit' Intended: 'Tuple' the Power of Rails Authorization", photo: "speakers/yatish-mehta.png"),
-    speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
-    speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
-    speaker.new(name: "Mysterious speaker", title: "To be revealed", photo: nil),
-    speaker.new(name: "Maciej Korsan", title: "From React to Hotwire", photo: "speakers/maciej-korsan.webp"),
+    speaker.new(
+      name: "Adam Dymitruk",
+      title: "Event Modeling from Beginner to Expert",
+      photo: "speakers/adam-dymitruk.avif"
+    ),
+    speaker.new(
+      name: "Joel Drapper",
+      title: "Ruby has literally always had types",
+      photo: "speakers/joel-drapper.avif"
+    ),
+    speaker.new(
+      name: "Stephen Margheim",
+      title: "On the tasteful journey to Yippee",
+      photo: "speakers/stephen-margheim.avif"
+    ),
+    speaker.new(
+      name: "Norbert Wójtowicz",
+      title:
+        "Gregorian Calendar — lessons learned maintaining 3000-year old codebase",
+      photo: "speakers/norbert-wojtowicz.avif"
+    ),
+    speaker.new(
+      name: "Szymon Fiedler",
+      title:
+        "Rewrite with confidence: validating business rules through isolated testing",
+      photo: "speakers/szymon-fiedler.avif"
+    ),
+    speaker.new(
+      name: "Mateusz Nowak",
+      title:
+        "Might & Magic of Domain-Driven Design through the lens of Heroes III",
+      photo: "speakers/mateusz-nowak.avif"
+    ),
+    speaker.new(
+      name: "John Gallagher",
+      title: "Fix Production Bugs 20x Faster — The Power of Structured Logging",
+      photo: "speakers/john-gallagher.webp"
+    ),
+    speaker.new(
+      name: "Wojtek Wrona",
+      title:
+        "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs",
+      photo: "speakers/wojtek-wrona.avif"
+    ),
+    speaker.new(
+      name: "Yatish Mehta",
+      title: "No 'Pundit' Intended: 'Tuple' the Power of Rails Authorization",
+      photo: "speakers/yatish-mehta.avif"
+    ),
+    speaker.new(
+      name: "Mysterious speaker",
+      title: "To be revealed",
+      photo: nil
+    ),
+    speaker.new(
+      name: "Mysterious speaker",
+      title: "To be revealed",
+      photo: nil
+    ),
+    speaker.new(
+      name: "Mysterious speaker",
+      title: "To be revealed",
+      photo: nil
+    ),
+    speaker.new(
+      name: "Maciej Korsan",
+      title: "From React to Hotwire",
+      photo: "speakers/maciej-korsan.webp"
+    )
   ]
 end
