@@ -1,51 +1,69 @@
 module SpeakerPhotoHelper
-  def speaker_photo_tag(filename, alt)
+  def speaker_photo_tag(filename, alt_text)
     basename = filename&.split(".")&.first
 
-    return placeholder unless basename
+    builder = PictureTagBuilder.new(basename, alt_text, @config[:output_dir])
+    builder.build
+  end
 
-    available_formats =
-      formats.keys.select do |ext|
-        File.exist?(File.join(output_dir, [basename, ext].join(".")))
+  class PictureTagBuilder
+    Format = Data.define(:extension, :mime_type)
+
+    FORMATS = [
+      Format.new("avif", "image/avif"),
+      Format.new("webp", "image/webp"),
+      Format.new("png", "image/png"),
+      Format.new("jpg", "image/jpeg")
+    ]
+
+    def initialize(basename, alt_text, content_dir)
+      @basename = basename
+      @alt_text = alt_text
+      @content_dir = content_dir
+    end
+
+    def build
+      return placeholder_tag unless @basename
+
+      available_formats = find_available_formats
+
+      return placeholder_tag if available_formats.empty?
+
+      build_picture_tag(available_formats)
+    end
+
+    private
+
+    def find_available_formats
+      FORMATS.select do |format|
+        File.exist?(
+          File.join(@content_dir, [@basename, format.extension].join("."))
+        )
       end
+    end
 
-    return placeholder if available_formats.empty?
+    def placeholder_tag
+      <<~HTML
+        <div class="relative h-52 w-52 bg-grey-100"></div> 
+      HTML
+    end
 
-    html = <<~HTML
-      <picture>
-    HTML
-
-    available_formats[0..-2].each { |ext| html << <<~HTML }
-          <source type="#{formats[ext]}" srcset="#{basename}.#{ext}" />
+    def build_picture_tag(formats)
+      html = <<~HTML
+        <picture>
       HTML
 
-    html << <<~HTML
-    <img src="#{basename}.#{available_formats.last}" alt="#{alt}" />
-      </picture>
-    HTML
+      formats[0..-2].each { |format| html << <<~HTML }
+          <source type="#{format.mime_type}" srcset="#{@basename}.#{format.extension}" />
+      HTML
 
-    html
-  end
+      html << <<~HTML
+          <img src="#{@basename}.#{formats.last.extension}" alt="#{@alt_text}" />
+        </picture>
+      HTML
 
-  private
-
-  def output_dir
-    @config[:output_dir]
-  end
-
-  def formats
-    {
-      "avif" => "image/avif",
-      "webp" => "image/webp",
-      "png" => "image/png",
-      "jpg" => "image/jpeg"
-    }
-  end
-
-  def placeholder
-    <<~HTML
-      <div class="relative h-52 w-52 bg-grey-100"></div> 
-    HTML
+      html
+    end
   end
 end
 
