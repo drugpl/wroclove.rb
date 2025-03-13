@@ -49,20 +49,15 @@ module SpeakerPhotoHelper
     end
 
     def build_picture_tag(formats)
-      html = +<<~HTML
+      source_tags = formats[0...-1].map { |format| <<~HTML }.join
+            <source type="#{format.mime_type}" srcset="#{@basename}.#{format.extension}" />
+        HTML
+
+      <<~HTML
         <picture>
-      HTML
-
-      formats[0...-1].each { |format| html << <<~HTML }
-          <source type="#{format.mime_type}" srcset="#{@basename}.#{format.extension}" />
-      HTML
-
-      html << <<~HTML
-          <img src="#{@basename}.#{formats.last.extension}" alt="#{@alt_text}" />
+          #{source_tags}<img src="#{@basename}.#{formats[-1].extension}" alt="#{@alt_text}" />
         </picture>
       HTML
-
-      html
     end
   end
 end
