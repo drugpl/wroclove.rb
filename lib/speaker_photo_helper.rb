@@ -2,7 +2,7 @@ module SpeakerPhotoHelper
   def speaker_photo_tag(filename, alt_text)
     basename = filename&.split(".")&.first
 
-    builder = PictureTagBuilder.new(basename, alt_text, @config[:output_dir])
+    builder = PictureTagBuilder.new(basename, alt_text)
     builder.build
   end
 
@@ -16,10 +16,9 @@ module SpeakerPhotoHelper
       Format.new("jpg", "image/jpeg")
     ]
 
-    def initialize(basename, alt_text, content_dir)
+    def initialize(basename, alt_text)
       @basename = basename
       @alt_text = alt_text
-      @content_dir = content_dir
     end
 
     def build
@@ -37,7 +36,7 @@ module SpeakerPhotoHelper
     def find_available_formats
       FORMATS.select do |format|
         File.exist?(
-          File.join(@content_dir, [@basename, format.extension].join("."))
+          File.join("content", [@basename, format.extension].join("."))
         )
       end
     end
