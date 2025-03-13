@@ -1,11 +1,4 @@
-<% if photo %>
-  <picture>
-    <source srcset="<%= photo.sub('.webp', '.avif') %>" type="image/avif" />
-    <img class="h-52 self-stretch" src="<%= photo %>" alt="<%= name %>" />
-  </picture>
-<% else %>
-  <div class="relative h-52 w-52 bg-grey-100"></div>
-<% end %>
+<%= speaker_photo_tag(photo, name) %>
 
 <div class="flex h-24 flex-col items-start justify-start self-stretch">
   <div class="self-stretch text-lg font-medium uppercase leading-loose text-grey-logo"><%= name %></div>

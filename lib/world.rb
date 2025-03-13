@@ -1,5 +1,6 @@
 use_helper Nanoc::Helpers::LinkTo
 use_helper Nanoc::Helpers::Rendering
+use_helper SpeakerPhotoHelper
 
 def speakers
   speaker = Data.define(:name, :title, :photo)
