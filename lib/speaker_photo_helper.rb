@@ -49,7 +49,7 @@ module SpeakerPhotoHelper
     end
 
     def build_picture_tag(formats)
-      html = <<~HTML
+      html = +<<~HTML
         <picture>
       HTML
 
