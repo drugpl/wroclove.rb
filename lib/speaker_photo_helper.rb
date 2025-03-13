@@ -53,7 +53,7 @@ module SpeakerPhotoHelper
         <picture>
       HTML
 
-      formats[0..-2].each { |format| html << <<~HTML }
+      formats[0...-1].each { |format| html << <<~HTML }
           <source type="#{format.mime_type}" srcset="#{@basename}.#{format.extension}" />
       HTML
 
