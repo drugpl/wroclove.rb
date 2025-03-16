@@ -55,14 +55,14 @@ def speakers
       photo: "speakers/yatish-mehta.webp"
     ),
     speaker.new(
-      name: "Mysterious speaker",
-      title: "To be revealed",
-      photo: nil
+      name: "Seth Horsley",
+      title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
+      photo: "speakers/seth-horsley.webp"
     ),
     speaker.new(
-      name: "Mysterious speaker",
-      title: "To be revealed",
-      photo: nil
+      name: "Chikahiro Tokoro",
+      title: "Is the monolith a problem?",
+      photo: "speakers/chikahiro-tokoro.webp"
     ),
     speaker.new(
       name: "Mysterious speaker",
