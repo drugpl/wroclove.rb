@@ -65,9 +65,9 @@ def speakers
       photo: "speakers/chikahiro-tokoro.webp"
     ),
     speaker.new(
-      name: "Mysterious speaker",
-      title: "To be revealed",
-      photo: nil
+      name: "Chris Hasiński",
+      title: "Next Token! (or how to work with LLMs)",
+      photo: "speakers/chris-hasinski.webp"
     ),
     speaker.new(
       name: "Maciej Korsan",
