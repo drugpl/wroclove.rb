@@ -1,0 +1,71 @@
+<%= render "/header.*" %>
+
+<div class="linear-gradient-r relative">
+  <div class="container_ py-20">
+    <div class="flex flex-col items-start justify-center gap-8 self-stretch py-8 lg:max-w-[720px]">
+      <div class="z-10 flex flex-col items-start justify-start gap-5 self-stretch">
+        <div class="flex flex-col items-start justify-start gap-5 self-stretch">
+          <div class="flex flex-col items-start justify-start gap-3 self-stretch">
+            <div class="pointer-events-auto self-stretch text-[40px] font-bold uppercase leading-[1.1] tracking-tighter text-grey-logo md:text-5xl md:leading-[1.125] md:tracking-tight">AGENDA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container_">
+  <% agenda_days.each do |agenda_day| %>
+    <div class="w-full max-w-[1360px] inline-flex flex-col justify-start items-start gap-8 mt-16">
+      <div class="self-stretch inline-flex justify-start items-center gap-5 ">
+        <div class="px-6 py-3 outline outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-4">
+          <div class="justify-center text-black text-lg font-bold font-['Overpass'] leading-loose"><%= agenda_day[:date] %></div>
+        </div>
+      </div>
+      <div class="py-3 border-b border-[#ed1c25]/30 inline-flex justify-start items-start gap-20">
+        <div class="w-20 justify-start text-black text-lg font-medium font-['Inter'] leading-loose">TIME</div>
+        <div class="w-[731px] inline-flex flex-col justify-start items-start gap-4">
+          <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-loose">SESSION</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full max-w-[1360px] inline-flex flex-col justify-start items-start gap-16 mt-8"">
+      <% agenda_day[:slots].each do |slot| %>
+        <div class="pb-8 inline-flex justify-start items-start gap-20">
+          <div class="w-20 justify-start text-black text-lg font-medium font-['Inter'] leading-loose"><%= slot.time %></div>
+          <div class="w-[731px] inline-flex flex-col justify-start items-start gap-4">
+            <div class="inline-flex justify-start items-center gap-2.5">
+              <% slot.tags.each do |tag| %>
+                <div data-size="S" class="px-2 py-1 bg-black outline outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-2.5">
+                  <div class="justify-start text-white text-sm font-medium font-['Inter'] leading-tight"><%= tag.upcase %></div>
+                </div>
+              <% end %>
+            </div>
+            <div class="self-stretch flex flex-col justify-start items-start gap-4">
+              <div class="flex flex-col justify-start items-start">
+                <div class="justify-start text-black text-2xl font-medium font-['Inter'] leading-10"><%= slot.title %></div>
+                <div class="self-stretch justify-start text-[#be161e] text-base font-normal font-['Inter'] underline leading-normal"><%= slot.author %></div>
+              </div>
+              <div class="self-stretch justify-start text-[#4f4c4d] text-base font-medium font-['Inter'] leading-normal"><%= slot.description %></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<div class="self-stretch w-full p-12 bg-black inline-flex justify-center items-center gap-4 mt-12">
+  <div class="container_">
+    <div class="flex-1 max-w-[1360px] flex justify-between items-end">
+      <div class="inline-flex flex-col justify-center items-start gap-3">
+        <div class="justify-start text-white text-3xl font-bold font-['Overpass'] leading-[48px]">Liked the agenda?</div>
+        <div class="w-[670px] h-14 justify-start text-[#d3d2d2] text-base font-medium font-['Inter'] leading-normal">Don't miss out on the opportunity to attend the conference - tickets as still available on sale. Get yourself one and see you in Wrocław!</div>
+      </div>
+      <%= link_to "Buy tickets", "https://wrocloverb2025.konfeo.com/en/groups", class: "button_ pointer-events-auto z-10 mx-auto w-full text-center text-lg font-bold text-black bg-white ml-6" %>
+    </div>
+  </div>
+</div>
+
+<%= render "/footer.*" %>
