@@ -120,6 +120,13 @@ def agenda_days
                       "to integrate them into your applications by treating them for what "\
                       "they really are - token generators.",
           tags: ["talk", "llm"]
+        ),
+        slot.new(
+          time: "20:00",
+          title: "Party",
+          author: nil,
+          description: "See you at the party at Klubokawiarnia Mleczarnia (Włodkowica 5) on level -1!",
+          tags: ["party"]
         )
       ]
     },
@@ -155,8 +162,7 @@ def agenda_days
           author: "Stephen Margheim",
           description: "Stephen is a software engineer from the US who loves to code and "\
                       "learn new things. He's the author of the book 'On the "\
-                      "tasteful journey to Yippee'. He's also the creator of the "\
-                      "software consultancy Thoughtbot.",
+                      "tasteful journey to Yippee'.",
           tags: ["talk", "rails"]
         ),
         slot.new(
@@ -182,13 +188,6 @@ def agenda_days
         ),
         slot.new(
           time: "15:00",
-          title: "Discussion panel",
-          author: nil,
-          description: nil,
-          tags: ["discussion panel"]
-        ),
-        slot.new(
-          time: "16:00",
           title: "Event Modeling from Beginner to Expert",
           author: "Adam Dymitruk",
           description: "As the author of Event Modeling, Adam will share his broad expertise in "\
@@ -197,13 +196,24 @@ def agenda_days
           tags: ["talk", "event modeling"]
         ),
         slot.new(
-          time: "17:00",
+          time: "16:00",
           title: "Might & Magic of Domain-Driven Design through the lens of Heroes III",
           author: "Mateusz Nowak",
           description: "Learn Domain-Driven Design practices used in real projects through "\
                       "analogies from a fantastic world of elves, heroes, and magic. "\
                       "All of this mixed with lots of code!",
           tags: ["talk", "ddd"]
+        ),
+        slot.new(
+          time: "17:00",
+          title: "Gregorian Calendar - lessons learned maintaining 3000-year old codebase",
+          author: "Norbert Wójtowicz",
+          description: "Have you ever worked with dates and wondered why we've ended up with with a leap day "\
+                      "that is added to the second and not the last month of the year? Norbert will "\
+                      "take us on journey through millennia that shaped our perception of the calendar. "\
+                      "He will show how to effectively work with dates and time to stay sane with that "\
+                      "legacy.",
+          tags: ["talk", "calendar"]
         ),
         slot.new(
           time: "18:00",
@@ -237,6 +247,19 @@ def agenda_days
         ),
         slot.new(
           time: "10:00",
+          title: "Is the monolith a problem?",
+          author: "Chikahiro Tokoro",
+          description: "Monoliths are often criticized, especially with context with Rails, "\
+                      "which has led many developers to leave Ruby/Rails. However, "\
+                      "Chikahiro believes this criticism misses the real issue: "\
+                      "the 'God Object' pattern, an insight drawn from his "\
+                      "extensive experience with various applications. He aims to "\
+                      "debunk this misconception, identify the true underlying problem, "\
+                      "and share practical solutions.",
+          tags: ["talk", "rails"]
+        ),
+        slot.new(
+          time: "11:00",
           title: "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs",
           author: "Wojtek Wrona",
           description: "SQLite's growing popularity in production has caught many developers' "\
@@ -256,45 +279,7 @@ def agenda_days
           tags: ["talk", "sqlite"]
         ),
         slot.new(
-          time: "11:00",
-          title: "Is the monolith a problem?",
-          author: "Chikahiro Tokoro",
-          description: "Monoliths are often criticized, especially with context with Rails, "\
-                      "which has led many developers to leave Ruby/Rails. However, "\
-                      "Chikahiro believes this criticism misses the real issue: "\
-                      "the 'God Object' pattern, an insight drawn from his "\
-                      "extensive experience with various applications. He aims to "\
-                      "debunk this misconception, identify the true underlying problem, "\
-                      "and share practical solutions.",
-          tags: ["talk", "rails"]
-        ),
-        slot.new(
           time: "12:00",
-          title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
-          author: "Seth Horsley",
-          description: "Tired of slow ERB templates and messy view logic? Discover how Phlex and RubyUI "\
-                      "bring blazing-fast and beautiful components to Rails while "\
-                      "maintaining the Ruby way we all love. Let's see how we can "\
-                      "build modern, accessible UIs without leaving the Rails ecosystem!",
-          tags: ["talk", "rails"]
-        ),
-        slot.new(
-          time: "13:00",
-          title: "Lunch break",
-          author: nil,
-          description: "Let us all have a lunch break, grab something to eat around the venue, "\
-                      "and get ready for the afternoon sessions.",
-          tags: ["lunch break"]
-        ),
-        slot.new(
-          time: "15:00",
-          title: "Discussion panel",
-          author: nil,
-          description: nil,
-          tags: ["discussion panel"]
-        ),
-        slot.new(
-          time: "16:00",
           title: "Rewrite with confidence: validating business rules through isolated testing",
           author: "Szymon Fiedler",
           description: "In the realm of legacy code rewrites, one challenge towers above all others: "\
@@ -307,24 +292,14 @@ def agenda_days
           tags: ["talk", "legacy"]
         ),
         slot.new(
-          time: "17:00",
-          title: "Gregorian Calendar - lessons learned maintaining 3000-year old codebase",
-          author: "Norbert Wójtowicz",
-          description: "Have you ever worked with dates and wondered why we've ended up with with a leap day "\
-                      "that is added to the second and not the last month of the year? Norbert will "\
-                      "take us on journey through millennia that shaped our perception of the calendar. "\
-                      "He will show how to effectively work with dates and time to stay sane with that "\
-                      "legacy.",
-          tags: ["talk", "calendar"]
-        ),
-        slot.new(
-          time: "18:00",
-          title: "Lightning talks",
-          author: nil,
-          description: "Lightning talks are a great way to learn about new ideas and share your thoughts. "\
-                      "Throughout the day, we encourage you to add your topic to the whiteboard "\
-                      "if you'd like to present.",
-          tags: ["lightning talks"]
+          time: "13:00",
+          title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
+          author: "Seth Horsley",
+          description: "Tired of slow ERB templates and messy view logic? Discover how Phlex and RubyUI "\
+                      "bring blazing-fast and beautiful components to Rails while "\
+                      "maintaining the Ruby way we all love. Let's see how we can "\
+                      "build modern, accessible UIs without leaving the Rails ecosystem!",
+          tags: ["talk", "rails"]
         )
       ]
     }
