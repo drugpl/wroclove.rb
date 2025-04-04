@@ -19,13 +19,13 @@
     <div class="w-full max-w-[1360px] inline-flex flex-col justify-start items-start gap-8 mt-16">
       <div class="self-stretch inline-flex justify-start items-center gap-5 ">
         <div class="px-6 py-3 outline outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-4">
-          <div class="justify-center text-black text-lg font-bold font-['Overpass'] leading-loose"><%= agenda_day[:date] %></div>
+          <div class="justify-center text-black text-lg font-bold font-overpass leading-loose"><%= agenda_day[:date] %></div>
         </div>
       </div>
-      <div class="w-full py-3 border-b border-[#ed1c25]/30 inline-flex justify-start items-start gap-6 md:gap-20">
-        <div class="w-20 justify-start text-black text-lg font-medium font-['Inter'] leading-loose">TIME</div>
+      <div class="w-full py-3 border-b border-red-logo/30 inline-flex justify-start items-start gap-6 md:gap-20">
+        <div class="w-20 justify-start text-black text-lg font-medium font-inter leading-loose">TIME</div>
         <div class="inline-flex flex-col justify-start items-start gap-4">
-          <div class="w-36 justify-start text-black text-lg font-medium font-['Inter'] leading-loose">SESSION</div>
+          <div class="w-36 justify-start text-black text-lg font-medium font-inter leading-loose">SESSION</div>
         </div>
       </div>
     </div>
@@ -33,21 +33,21 @@
     <div class="w-full max-w-[1360px] inline-flex flex-col justify-start items-start gap-16 mt-8"">
       <% agenda_day[:slots].each do |slot| %>
         <div class="self-stretch inline-flex justify-start items-start gap-6 md:gap-20 flex-wrap content-start">
-          <div class="w-20 justify-start text-black text-lg font-medium font-['Inter'] leading-loose"><%= slot.time %></div>
+          <div class="w-20 justify-start text-black text-lg font-medium font-inter leading-loose"><%= slot.time %></div>
           <div class="flex-1 inline-flex flex-col justify-start items-start gap-4">
             <div class="inline-flex justify-start items-center gap-2.5">
               <% slot.tags.each do |tag| %>
                 <div data-size="S" class="px-2 py-1 bg-black outline outline-1 outline-offset-[-1px] outline-black flex justify-center items-center gap-2.5">
-                  <div class="justify-start text-white text-sm font-medium font-['Inter'] leading-tight"><%= tag.upcase %></div>
+                  <div class="justify-start text-white text-sm font-medium font-inter leading-tight"><%= tag.upcase %></div>
                 </div>
               <% end %>
             </div>
             <div class="self-stretch flex flex-col justify-start items-start gap-4">
               <div class="w-full flex flex-col justify-start items-start">
-                <div class="justify-start text-black text-2xl font-medium font-['Inter'] leading-10"><%= slot.title %></div>
-                <div class="self-stretch justify-start text-[#be161e] text-base font-normal font-['Inter'] underline leading-normal"><%= slot.author %></div>
+                <div class="justify-start text-black text-2xl font-medium font-inter leading-10"><%= slot.title %></div>
+                <div class="self-stretch justify-start text-red-100 text-base font-normal font-inter underline leading-normal"><%= slot.author %></div>
               </div>
-              <div class="self-stretch justify-start text-[#4f4c4d] text-base font-medium font-['Inter'] leading-normal"><%= slot.description %></div>
+              <div class="self-stretch justify-start text-grey-600 text-base font-medium font-inter leading-normal"><%= slot.description %></div>
             </div>
           </div>
         </div>
@@ -60,8 +60,8 @@
   <div class="container_">
     <div class="max-w-[1360px] flex flex-col md:flex-row justify-between items-end">
       <div class="inline-flex flex-col justify-center items-start gap-3">
-        <div class="justify-start text-white text-3xl font-bold font-['Overpass'] leading-[48px]">Liked the agenda?</div>
-        <div class="justify-start text-[#d3d2d2] text-base font-medium font-['Inter'] leading-normal">Don't miss out on the opportunity to attend the conference - tickets as still available on sale. Get yourself one and see you in Wrocław!</div>
+        <div class="justify-start text-white text-3xl font-bold font-overpass leading-[48px]">Liked the agenda?</div>
+        <div class="justify-start text-grey-200 text-base font-medium font-inter leading-normal">Don't miss out on the opportunity to attend the conference - tickets as still available on sale. Get yourself one and see you in Wrocław!</div>
       </div>
       <%= link_to "Buy tickets", "https://wrocloverb2025.konfeo.com/en/groups", class: "button_ pointer-events-auto z-10 mx-auto w-full text-center text-lg font-bold text-black bg-white mt-4 md:mt-0 md:ml-6" %>
     </div>
