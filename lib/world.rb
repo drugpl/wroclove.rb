@@ -6,11 +6,6 @@ def speakers
   speaker = Data.define(:name, :title, :photo)
   [
     speaker.new(
-      name: "Adam Dymitruk",
-      title: "Event Modeling from Beginner to Expert",
-      photo: "speakers/adam-dymitruk.webp"
-    ),
-    speaker.new(
       name: "Joel Drapper",
       title: "Ruby has literally always had types",
       photo: "speakers/joel-drapper.webp"
@@ -60,9 +55,9 @@ def speakers
       photo: "speakers/seth-horsley.webp"
     ),
     speaker.new(
-      name: "Chikahiro Tokoro",
-      title: "Is the monolith a problem?",
-      photo: "speakers/chikahiro-tokoro.webp"
+      name: "Adam Piotrowski",
+      title: "That is not so bad after all",
+      photo: "speakers/adam-piotrowski.webp"
     ),
     speaker.new(
       name: "Chris Hasiński",
@@ -213,12 +208,16 @@ def agenda_days
         ),
         slot.new(
           time: "15:00",
-          title: "Event Modeling from Beginner to Expert",
-          author: "Adam Dymitruk",
-          description: "As the author of Event Modeling, Adam will share his broad expertise in "\
-                       "his talk on this subject. If you're curious about all the bits on "\
-                       "event modeling - there is no better expert to listen to.",
-          tags: ["talk", "event modeling"]
+          title: "Rewrite with confidence: validating business rules through isolated testing",
+          author: "Szymon Fiedler",
+          description: "In the realm of legacy code rewrites, one challenge towers above all others: "\
+                       "ensuring that the new implementation faithfully preserves existing business rules. "\
+                       "Traditional approaches often lead to intertwined tests that make verification "\
+                       "difficult and risky. This talk presents a practical methodology for "\
+                       "verifying business logic equivalence during rewrites, focusing on "\
+                       "isolating side effects and leveraging existing system behavior as a "\
+                       "specification.",
+          tags: ["talk", "legacy"]
         ),
         slot.new(
           time: "16:00",
@@ -272,15 +271,12 @@ def agenda_days
         ),
         slot.new(
           time: "10:00",
-          title: "Is the monolith a problem?",
-          author: "Chikahiro Tokoro",
-          description: "Monoliths are often criticized, especially with context with Rails, "\
-                       "which has led many developers to leave Ruby/Rails. However, "\
-                       "Chikahiro believes this criticism misses the real issue: "\
-                       "the 'God Object' pattern, an insight drawn from his "\
-                       "extensive experience with various applications. He aims to "\
-                       "debunk this misconception, identify the true underlying problem, "\
-                       "and share practical solutions.",
+          title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
+          author: "Seth Horsley",
+          description: "Tired of slow ERB templates and messy view logic? Discover how Phlex and RubyUI "\
+                       "bring blazing-fast and beautiful components to Rails while "\
+                       "maintaining the Ruby way we all love. Let's see how we can "\
+                       "build modern, accessible UIs without leaving the Rails ecosystem!",
           tags: ["talk", "rails"]
         ),
         slot.new(
@@ -305,26 +301,13 @@ def agenda_days
         ),
         slot.new(
           time: "12:00",
-          title: "Rewrite with confidence: validating business rules through isolated testing",
-          author: "Szymon Fiedler",
-          description: "In the realm of legacy code rewrites, one challenge towers above all others: "\
-                       "ensuring that the new implementation faithfully preserves existing business rules. "\
-                       "Traditional approaches often lead to intertwined tests that make verification "\
-                       "difficult and risky. This talk presents a practical methodology for "\
-                       "verifying business logic equivalence during rewrites, focusing on "\
-                       "isolating side effects and leveraging existing system behavior as a "\
-                       "specification.",
-          tags: ["talk", "legacy"]
-        ),
-        slot.new(
-          time: "13:00",
-          title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
-          author: "Seth Horsley",
-          description: "Tired of slow ERB templates and messy view logic? Discover how Phlex and RubyUI "\
-                       "bring blazing-fast and beautiful components to Rails while "\
-                       "maintaining the Ruby way we all love. Let's see how we can "\
-                       "build modern, accessible UIs without leaving the Rails ecosystem!",
-          tags: ["talk", "rails"]
+          title: "That is not so bad after all",
+          author: "Adam Piotrowski",
+          description: "Let's face it - coding is fun and joyful, but we've all experienced situations "\
+                       "where the only solution seemed to be throwing our computer out the window. "\
+                       "In this talk, Adam will share 7 stories about the most bizarre situations "\
+                       "he encountered in the industry and draw valuable lessons from them.",
+          tags: ["talk", "real world"]
         )
       ]
     }
