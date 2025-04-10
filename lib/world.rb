@@ -60,6 +60,11 @@ def speakers
       photo: "speakers/adam-piotrowski.webp"
     ),
     speaker.new(
+      name: "Chikahiro Tokoro",
+      title: "Is the monolith a problem?",
+      photo: "speakers/chikahiro-tokoro.webp"
+    ),
+    speaker.new(
       name: "Chris Hasiński",
       title: "Next Token! (or how to work with LLMs)",
       photo: "speakers/chris-hasinski.webp"
@@ -271,6 +276,19 @@ def agenda_days
         ),
         slot.new(
           time: "10:00",
+          title: "Is the monolith a problem?",
+          author: "Chikahiro Tokoro",
+          description: "Monoliths are often criticized, especially with context with Rails, "\
+                       "which has led many developers to leave Ruby/Rails. However, "\
+                       "Chikahiro believes this criticism misses the real issue: "\
+                       "the 'God Object' pattern, an insight drawn from his "\
+                       "extensive experience with various applications. He aims to "\
+                       "debunk this misconception, identify the true underlying problem, "\
+                       "and share practical solutions.",
+          tags: ["talk", "rails"]
+        ),
+        slot.new(
+          time: "11:00",
           title: "Building Beautiful UIs with Ruby: A Rails-Native Approach",
           author: "Seth Horsley",
           description: "Tired of slow ERB templates and messy view logic? Discover how Phlex and RubyUI "\
@@ -280,7 +298,7 @@ def agenda_days
           tags: ["talk", "rails"]
         ),
         slot.new(
-          time: "11:00",
+          time: "12:00",
           title: "From PostgreSQL to SQLite in Rails: Our Migration Journey, Challenges, and Lasting Trade-Offs",
           author: "Wojtek Wrona",
           description: "SQLite's growing popularity in production has caught many developers' "\
@@ -300,7 +318,7 @@ def agenda_days
           tags: ["talk", "sqlite"]
         ),
         slot.new(
-          time: "12:00",
+          time: "13:00",
           title: "That is not so bad after all",
           author: "Adam Piotrowski",
           description: "Let's face it - coding is fun and joyful, but we've all experienced situations "\
