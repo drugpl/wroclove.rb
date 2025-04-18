@@ -2,6 +2,17 @@
 
 ignore "/main.*"
 
+compile "/**/*.rb" do
+  filter :phlex
+  layout "/default.*"
+
+  if item.identifier =~ "**/index.*"
+    write item.identifier.without_ext + ".html"
+  else
+    write item.identifier.without_ext + "/index.html"
+  end
+end
+
 compile "/**/*.{html,erb}" do
   filter :erb
   layout "/default.*"
