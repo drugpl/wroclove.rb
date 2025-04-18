@@ -2,6 +2,25 @@ use_helper Nanoc::Helpers::LinkTo
 use_helper Nanoc::Helpers::Rendering
 use_helper SpeakerPhotoHelper
 
+require "phlex"
+
+class PhlexFilter < Nanoc::Filter
+  identifier :phlex
+
+  def run(content, params = {})
+    Class
+      .new(Phlex::HTML) do
+        include Nanoc::Helpers::Rendering
+
+        def initialize(assigns) =
+          assigns.each { |k, v| instance_variable_set("@#{k}", v) }
+        define_method(:view_template) { eval(content) }
+      end
+      .new(assigns)
+      .call
+  end
+end
+
 def speakers
   speaker = Data.define(:name, :title, :photo)
   [
