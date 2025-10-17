@@ -19,4 +19,14 @@
   .linear-gradient-l {
     @apply bg-gradient-to-l from-white to-red-100/5;
   }
+
+  .blurred-background-hero {
+    @apply relative;
+  }
+
+  .blurred-background-hero::before {
+    content: '';
+    @apply absolute inset-0 bg-cover bg-right-top bg-no-repeat blur-[2px] -z-10;
+    background-image: url('/images/sedesowiec_background_hero.jpeg');
+  }
 }
