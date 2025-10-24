@@ -108,7 +108,7 @@
   </div>
 </div>
 
-<div class="linear-gradient-r flex items-center justify-center gap-8 py-12 pointer-events-auto">
+<div class="linear-gradient-l flex items-center justify-center gap-8 py-12 pointer-events-auto">
   <div class="container_">
     <div class="flex flex-col items-end justify-start gap-4 md:flex-row">
       <div class="flex flex-col items-start justify-start gap-3 md:w-1/2">
@@ -259,14 +259,25 @@
       </div>
     </div> -->
 
+<div class="linear-gradient-r pointer-events-auto">
+  <div class="container_">
+    <div class="flex flex-col items-start justify-start gap-8 py-10">
+      <div class="flex flex-col items-start justify-start md:flex-row md:items-center md:gap-12">
+        <div class="text-4xl font-bold leading-normal text-grey-800">Supporting the mission</div>
+        <!-- <div class="hidden font-inter text-3xl font-bold text-grey-400 md:flex">|</div>
+            <div class="mt-4 text-2xl font-medium leading-snug text-grey-800 md:mt-0">Do you want to be on the list? Click here to support us!</div> -->
+      </div>
+      <%= render "/supporters.*" %>
+    </div>
+  </div>
+</div>
+
 <div class="container_ pointer-events-auto">
   <div class="flex flex-col items-start justify-start gap-8 bg-white py-10">
     <div class="flex flex-col items-start justify-start md:flex-row md:items-center md:gap-12">
-      <div class="text-4xl font-bold leading-normal text-grey-800">Supporting the mission</div>
-      <!-- <div class="hidden font-inter text-3xl font-bold text-grey-400 md:flex">|</div>
-          <div class="mt-4 text-2xl font-medium leading-snug text-grey-800 md:mt-0">Do you want to be on the list? Click here to support us!</div> -->
+      <div class="text-4xl font-bold leading-normal text-grey-800">Our partners</div>
     </div>
-    <%= render "/supporters.*" %>
+    <%= render "/partners.*" %>
   </div>
 </div>
 
