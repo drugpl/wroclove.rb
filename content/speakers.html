@@ -28,7 +28,7 @@
 
 <div class="inline-flex h-52 w-full items-center justify-between bg-black sm:h-32">
   <div class="container_">
-    <div class="flex h-10 flex-col items-center justify-between sm:flex-row">
+    <div class="flex h-10 flex-col items-center justify-between sm:flex-row gap-8">
       <div class="font-inter text-2xl font-medium leading-10 text-white">Join wroclove.rb as a speaker</div>
       <div class="flex items-center justify-start gap-3 sm:inline-flex sm:gap-4">
         <div class="pointer-events-auto font-inter text-2xl font-light italic leading-7 text-white sm:leading-10 md:text-3xl">
@@ -57,12 +57,17 @@
               <div class="flex shrink grow basis-0 flex-col items-end justify-start gap-4 self-stretch">
                 <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-4 self-stretch">
                   <div class="flex flex-col items-start justify-start gap-2 self-stretch">
-                    <div class="self-stretch text-2xl font-bold leading-normal text-grey-logo">Professional recognition</div>
+                    <div class="self-stretch text-2xl font-bold leading-normal text-grey-logo">Personal growth</div>
                   </div>
                   <div class="shrink grow basis-0 self-stretch font-inter text-sm font-normal leading-tight text-grey-600">
                     As a speaker at wroclove.rb, you'll position yourself as an expert in the Ruby community.
                     Your insights and experiences will be valued by peers, boosting your professional profile
                     and opening doors to new opportunities.
+                    <br/><br/>
+
+                    Speaking at wroclove.rb is a chance to refine your ability to communicate complex technical concepts
+                    clearly and engagingly. This experience will build your confidence not just in public speaking,
+                    but in expressing your ideas effectively in any professional setting.
                   </div>
                 </div>
               </div>
@@ -96,12 +101,14 @@
               <div class="flex shrink grow basis-0 flex-col items-end justify-start gap-4 self-stretch">
                 <div class="flex shrink grow basis-0 flex-col items-start justify-start gap-4 self-stretch">
                   <div class="flex flex-col items-start justify-start gap-2 self-stretch">
-                    <div class="self-stretch text-2xl font-bold leading-normal text-grey-logo">Personal growth</div>
+                    <div class="self-stretch text-2xl font-bold leading-normal text-grey-logo">Speaker benefits</div>
                   </div>
                   <div class="shrink grow basis-0 self-stretch font-inter text-sm font-normal leading-tight text-grey-600">
-                    Speaking at wroclove.rb is a chance to refine your ability to communicate complex technical concepts
-                    clearly and engagingly. This experience will build your confidence not just in public speaking,
-                    but in expressing your ideas effectively in any professional setting.
+                    🎟️ Free admission to wroclove.rb and selected workshop
+                    <br/><br/>
+                    🏨 Hotel accommodation from April 16th until 19th covered
+                    <br/><br/>
+                    🍽️ Speaker dinner on April 16th
                   </div>
                 </div>
               </div>
@@ -117,42 +124,74 @@
   <div class="container_">
     <div class="flex flex-col items-start justify-start gap-8 py-12 self-stretch">
       <div class="flex flex-col items-start justify-start gap-4">
-        <div class="font-overpass text-4xl font-bold leading-10 text-grey-logo">Timeline</div>
+        <div class="font-overpass text-4xl font-bold leading-10 text-grey-logo">
+          Timeline
+        </div>
       </div>
+
       <div class="relative w-full py-12">
-        <!-- Timeline line -->
-        <div class="hidden sm:block absolute left-0 top-12 h-0.5 w-full bg-red-logo/30"></div>
-        
+        <!-- MOBILE: vertical line -->
+        <div class="absolute left-12 top-0 bottom-0 w-0.5 bg-red-logo/30 md:hidden"></div>
+
+        <!-- DESKTOP: horizontal line -->
+        <div class="hidden md:block absolute left-0 top-12 h-0.5 w-full bg-red-logo/30"></div>
+
         <!-- Timeline events -->
-        <div class="relative flex flex-col items-center sm:items-start justify-start gap-12 sm:flex-row sm:justify-between">
-          <!-- Event 1: Start of call for papers -->
-          <div class="relative flex flex-col items-center justify-start gap-3 sm:w-1/3">
-            <div class="absolute -top-6 z-10 h-6 w-6 sm:h-12 sm:w-12 rounded-full border-2 border-red-logo/30 bg-white"></div>
-            <div class="mt-4 sm:mt-12 flex flex-col items-center justify-start gap-2">
-              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">13.10.2025</div>
-              <div class="font-inter text-sm text-centerfont-normal leading-tight text-grey-600">CFP opens</div>
+        <div class="relative flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
+          <!-- Event 1 -->
+          <div class="relative flex flex-col items-start gap-3 pl-10 md:pl-0 md:w-1/3 md:items-center">
+            <!-- MOBILE dot -->
+            <div class="absolute left-9 top-1 h-6 w-6 rounded-full border-2 border-red-logo/30 bg-white md:hidden"></div>
+            <!-- DESKTOP dot -->
+            <div class="hidden md:block absolute -top-6 z-10 h-12 w-12 rounded-full border-2 border-red-logo/30 bg-white"></div>
+
+            <div class="mt-0 md:mt-12 ml-9 md:ml-0 flex flex-col items-start md:items-center gap-2">
+              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">
+                13.10.2025
+              </div>
+              <div class="font-inter text-sm text-left md:text-center font-normal leading-tight text-grey-600">
+                CFP opens
+              </div>
             </div>
           </div>
-          
-          <!-- Event 2: End of call for papers -->
-          <div class="relative flex flex-col items-start justify-start gap-3 sm:w-1/3">
-            <div class="absolute -top-6 left-1/2 z-10 h-6 w-6 sm:h-12 sm:w-12 -translate-x-1/2 rounded-full border-2 border-red-logo/30 bg-white"></div>
-            <div class="mt-4 sm:mt-12 flex flex-col items-center justify-start gap-2">
-              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">13.01.2026</div>
-              <div class="font-inter text-sm text-center font-normal leading-tight text-grey-600">CFP closes</div>
-              <div class="font-inter text-xs text-center font-normal leading-tight text-grey-600 w-[75%]">
+
+          <!-- Event 2 -->
+          <div class="relative flex flex-col items-start gap-3 pl-10 md:pl-0 md:w-1/3 md:items-center">
+            <!-- MOBILE dot -->
+            <div class="absolute left-9 top-1 h-6 w-6 rounded-full border-2 border-red-logo/30 bg-white md:hidden"></div>
+            <!-- DESKTOP dot (centered in its column) -->
+            <div
+              class="hidden md:block absolute -top-6 left-1/2 z-10 h-12 w-12 -translate-x-1/2 rounded-full border-2 border-red-logo/30 bg-white">
+            </div>
+
+            <div class="mt-0 md:mt-12 ml-9 md:ml-0 flex flex-col items-start md:items-center gap-2">
+              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">
+                13.01.2026
+              </div>
+              <div class="font-inter text-sm text-left md:text-center font-normal leading-tight text-grey-600">
+                CFP closes
+              </div>
+              <div class="font-inter text-xs text-left md:text-center font-normal leading-tight text-grey-600 w-[75%]">
                 if you need to know about your approval sooner because of visa reasons for example, let us know
               </div>
             </div>
           </div>
-          
-          <!-- Event 3: CFP speakers selected -->
-          <div class="relative flex flex-col items-center justify-start gap-3 sm:w-1/3">
-            <div class="absolute -top-6 z-10 h-6 w-6 sm:h-12 sm:w-12 rounded-full border-2 border-red-logo/30 bg-white"></div>
-            <div class="mt-4 sm:mt-12 flex flex-col items-center justify-start gap-2">
-              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">31.01.2026</div>
-              <div class="font-inter text-sm text-center font-normal leading-tight text-grey-600">CFP review ends</div>
-              <div class="font-inter text-xs text-center font-normal leading-tight text-grey-600 w-[75%]">
+
+          <!-- Event 3 -->
+          <div class="relative flex flex-col items-start gap-3 pl-10 md:pl-0 md:w-1/3 md:items-center">
+            <!-- MOBILE dot -->
+            <div class="absolute left-9 top-1 h-6 w-6 rounded-full border-2 border-red-logo/30 bg-white md:hidden"></div>
+            <!-- DESKTOP dot -->
+            <div class="hidden md:block absolute -top-6 z-10 h-12 w-12 rounded-full border-2 border-red-logo/30 bg-white"></div>
+
+            <div class="mt-0 md:mt-12 ml-9 md:ml-0 flex flex-col items-start md:items-center gap-2">
+              <div class="font-inter text-lg font-bold leading-normal text-grey-logo">
+                31.01.2026
+              </div>
+              <div class="font-inter text-sm text-left md:text-center font-normal leading-tight text-grey-600">
+                CFP review ends
+              </div>
+              <div class="font-inter text-xs text-left md:text-center font-normal leading-tight text-grey-600 w-[75%]">
                 by this date you'll know whether your talk was selected or not
               </div>
             </div>
