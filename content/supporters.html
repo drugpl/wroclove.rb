@@ -97,13 +97,34 @@
   </div>
 </div>
 
+<div class="linear-gradient-l flex items-center justify-center gap-8 py-12 pointer-events-auto">
+  <div class="container_">
+    <div class="flex flex-col items-end justify-start gap-4 md:flex-row">
+      <div class="flex flex-col items-start justify-start gap-3 md:w-1/2">
+        <div class="self-stretch text-3xl font-bold leading-10 text-grey-logo">Single package</div>
+        <div class="self-stretch font-inter text-md font-medium leading-normal text-grey-600">
+          At wroclove.rb, we've always kept things simple - focusing on great speakers, meaningful conversations,
+          and bringing Ruby developers together. With that spirit in mind, we offer a single supporter package priced at <b>800 EUR (net)</b>.
+        </br></br>
+          If you're looking for a way to give back to the Ruby community and connect with ~150 passionate participants,
+          supporting our conference is a fantastic opportunity.
+        </div>
+      </div>
+      <div class="button_ w-full md:w-1/2">
+        <%= link_to "Support us", "https://www.tickettailor.com/events/wrocloverb/1903580", class: "button_ z-10 mx-auto w-full text-center text-lg font-bold text-white cursor-pointer" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="container_ flex flex-col pointer-events-auto">
   <div class="inline-flex min-h-44 flex-col items-start justify-center gap-3 overflow-hidden bg-white py-20 sm:min-h-80 sm:items-center sm:justify-start sm:gap-8">
     <div class="inline-flex flex-col items-center justify-start gap-12 sm:flex-row">
       <div class="font-overpass text-3xl font-bold leading-10 text-[#151314]">Thank you to our supporters</div>
       <div class="hidden font-inter text-3xl font-bold text-grey-400 sm:block">|</div>
       <div class="pointer-events-auto font-overpass text-2xl font-medium leading-loose text-[#151314]">
-        <a href="mailto:all@wrocloverb.com">Do you want to be on the list? Click here to support us!</a>
+        <a href="https://www.tickettailor.com/events/wrocloverb/1903580">Do you want to be on the list? Click here to support us!</a>
       </div>
     </div>
     <%= render "/supporters.*" %>
