@@ -5,16 +5,21 @@ use_helper SpeakerPhotoHelper
 def speakers
   speaker = Data.define(:name, :title, :photo)
   [
-    # speaker.new(
-    #   name: "Joel Drapper",
-    #   title: "Ruby has literally always had types",
-    #   photo: "speakers/joel-drapper.webp"
-    # ),
-    # speaker.new(
-    #   name: "Stephen Margheim",
-    #   title: "On the tasteful journey to Yippee",
-    #   photo: "speakers/stephen-margheim.webp"
-    # )
+    speaker.new(
+      name: "Greg Molnar",
+      title: "Securing Rails applications (workshop)",
+      photo: "speakers/greg-molnar.webp"
+    ),
+    speaker.new(
+      name: "Ismael Celis",
+      title: "Event Sourcing and Actor model in Ruby",
+      photo: "speakers/ismael-celis.webp"
+    ),
+    speaker.new(
+      name: "You",
+      title: "Submit your talk - CFP is open till Jan 13!",
+      photo: "speakers/unknown-speaker.webp"
+    )
   ]
 end
 
