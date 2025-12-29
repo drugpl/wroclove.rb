@@ -16,6 +16,11 @@ def speakers
       photo: "speakers/ismael-celis.webp"
     ),
     speaker.new(
+      name: "Charles Nutter",
+      title: "JRuby: Professional-Grade Ruby",
+      photo: "speakers/charles-nutter.webp"
+    ),
+    speaker.new(
       name: "You",
       title: "Submit your talk - CFP is open till Jan 13!",
       photo: "speakers/unknown-speaker.webp"
