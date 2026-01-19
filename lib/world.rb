@@ -21,9 +21,9 @@ def speakers
       photo: "speakers/charles-nutter.webp"
     ),
     speaker.new(
-      name: "You",
-      title: "Submit your talk - CFP is open till Jan 13!",
-      photo: "speakers/unknown-speaker.webp"
+      name: "Josef Strzibny",
+      title: "Kamal is not harder than your PaaS",
+      photo: "speakers/josef-strzibny.webp"
     )
   ]
 end
