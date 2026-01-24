@@ -1,15 +1,17 @@
-<div class="container_ pointer-events-auto py-12">
-  <div class="flex flex-col items-center justify-center gap-12 bg-white">
-    <div class="self-stretch text-4xl font-bold leading-10 text-grey-logo">Joined us already</div>
-    <div class="flex flex-wrap items-start justify-center gap-5">
-      <% speakers.each.with_index do |speaker, idx| %>
-        <div class="flex w-52 flex-col items-start justify-start gap-2 <%= idx % 2 == 1 ? "pt-8" : "" %>">
-          <%= render "/speaker.erb", name: speaker.name, title: speaker.title, photo: speaker.photo %>
-        </div>
-      <% end %>
-    </div>
-    <div class="inline-flex flex-col items-center justify-start gap-12 sm:flex-row">
-      <div class="font-overpass text-3xl font-bold leading-10">The full agenda will be announced soon!</div>
+<div class="linear-gradient-l flex items-center justify-center gap-8 py-12 pointer-events-auto">
+  <div class="container_">
+    <div class="flex flex-col items-center justify-center gap-12">
+      <div class="self-stretch text-4xl font-bold leading-10 text-grey-logo">Joined us already</div>
+      <div class="flex flex-wrap items-start justify-center gap-5">
+        <% speakers.each.with_index do |speaker, idx| %>
+          <div class="flex w-52 flex-col items-start justify-start gap-2 <%= idx % 2 == 1 ? "pt-8" : "" %>">
+            <%= render "/speaker.erb", name: speaker.name, title: speaker.title, photo: speaker.photo %>
+          </div>
+        <% end %>
+      </div>
+      <div class="inline-flex flex-col items-center justify-start gap-12 sm:flex-row">
+        <div class="font-overpass text-3xl font-bold leading-10">The full agenda will be announced soon!</div>
+      </div>
     </div>
   </div>
 </div>
