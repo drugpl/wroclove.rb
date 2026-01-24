@@ -2,6 +2,17 @@
 
 ignore "/main.*"
 
+compile "/**/*.rb" do
+  filter :phlex
+  layout "/default.*"
+
+  if item.identifier =~ "**/index.*"
+    write item.identifier.without_ext + ".html"
+  else
+    write item.identifier.without_ext + "/index.html"
+  end
+end
+
 compile "/**/*.{html,erb}" do
   filter :erb
   layout "/default.*"
@@ -12,21 +23,6 @@ compile "/**/*.{html,erb}" do
     write item.identifier.without_ext + "/index.html"
   end
 end
-
-# This is an example rule that matches Markdown (.md) files, and filters them
-# using the :kramdown filter. It is commented out by default, because kramdown
-# is not bundled with Nanoc or Ruby.
-#
-#compile '/**/*.md' do
-#  filter :kramdown
-#  layout '/default.*'
-#
-#  if item.identifier =~ '**/index.*'
-#    write item.identifier.to_s
-#  else
-#    write item.identifier.without_ext + '/index.html'
-#  end
-#end
 
 compile "/**/*" do
   write item.identifier.to_s
