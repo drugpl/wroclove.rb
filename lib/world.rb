@@ -24,6 +24,11 @@ def speakers
       name: "Josef Strzibny",
       title: "Kamal is not harder than your PaaS",
       photo: "speakers/josef-strzibny.webp"
+    ),
+    speaker.new(
+      name: "Markus Schirp",
+      title: "Kamal is not harder than your PaaS (workshop)",
+      photo: "speakers/markus-schirp.webp"
     )
   ]
 end
