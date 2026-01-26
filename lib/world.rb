@@ -27,7 +27,7 @@ def speakers
     ),
     speaker.new(
       name: "Markus Schirp",
-      title: "Kamal is not harder than your PaaS (workshop)",
+      title: "Setup and operation of mutation testing in agentic world (workshop)",
       photo: "speakers/markus-schirp.webp"
     )
   ]
