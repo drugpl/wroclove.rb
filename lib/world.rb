@@ -27,6 +27,26 @@ def speakers
     ),
     speaker.new(
       name: "Markus Schirp",
+      title: "My core skill never was the typing",
+      photo: "speakers/markus-schirp.webp",
+    ),
+    speaker.new(
+      name: "Louis Antonopoulos",
+      title: "Rubyana Gems and the Ractorous Rubetta Stones!",
+      photo: "speakers/louis-antonopoulos.webp",
+    ),
+    speaker.new(
+      name: "Nicolò Rebughini",
+      title: "Accidentally building a neural network — A Ruby product recommendation journey",
+      photo: "speakers/nicolo-rebughini.webp",
+    ),
+    speaker.new(
+      name: "Sharon Rosner",
+      title: "UringMachine — High Performance Concurrency for Ruby Using io_uring",
+      photo: "speakers/sharon-rosner.webp",
+    ),
+    speaker.new(
+      name: "Markus Schirp",
       title: "Setup and operation of mutation testing in agentic world (workshop)",
       photo: "speakers/markus-schirp.webp"
     )
