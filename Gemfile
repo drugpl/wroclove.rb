@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.4.8"
+ruby "4.0.1"
 
 gem "nanoc"
 gem "adsf"
