@@ -49,7 +49,13 @@ def speakers
       name: "Markus Schirp",
       title: "Setup and operation of mutation testing in agentic world (workshop)",
       photo: "speakers/markus-schirp.webp"
+    ),
+    speaker.new(
+      name: "Adam Okoń",
+      title: "Forms Are Dead: Building Agentic Workflows in Ruby",
+      photo: "speakers/adam-okon.webp"
     )
+
   ]
 end
 
