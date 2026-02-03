@@ -54,7 +54,7 @@ module SpeakerPhotoHelper
 
       <<~HTML
         <picture class="h-52">
-          #{source_tags}<img class="w-full h-full object-cover object-top" src="#{@basename}.#{formats[-1].extension}" alt="#{@alt_text}" />
+          #{source_tags}<img class="w-full h-full object-cover object-center" src="#{@basename}.#{formats[-1].extension}" alt="#{@alt_text}" />
         </picture>
       HTML
     end
