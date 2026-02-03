@@ -53,8 +53,8 @@ module SpeakerPhotoHelper
         HTML
 
       <<~HTML
-        <picture>
-          #{source_tags}<img src="#{@basename}.#{formats[-1].extension}" alt="#{@alt_text}" />
+        <picture class="h-52">
+          #{source_tags}<img class="w-full h-full object-cover object-top" src="#{@basename}.#{formats[-1].extension}" alt="#{@alt_text}" />
         </picture>
       HTML
     end
