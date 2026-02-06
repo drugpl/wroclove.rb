@@ -6,16 +6,6 @@ def speakers
   speaker = Data.define(:name, :title, :photo)
   [
     speaker.new(
-      name: "Greg Molnar",
-      title: "Securing Rails applications (workshop)",
-      photo: "speakers/greg-molnar.webp"
-    ),
-    speaker.new(
-      name: "Ismael Celis",
-      title: "Event Sourcing and Actor model in Ruby",
-      photo: "speakers/ismael-celis.webp"
-    ),
-    speaker.new(
       name: "Charles Nutter",
       title: "JRuby: Professional-Grade Ruby",
       photo: "speakers/charles-nutter.webp"
@@ -29,6 +19,11 @@ def speakers
       name: "Markus Schirp",
       title: "My core skill never was the typing",
       photo: "speakers/markus-schirp.webp",
+    ),
+    speaker.new(
+      name: "Ismael Celis",
+      title: "Event Sourcing and Actor model in Ruby",
+      photo: "speakers/ismael-celis.webp"
     ),
     speaker.new(
       name: "Louis Antonopoulos",
@@ -46,16 +41,40 @@ def speakers
       photo: "speakers/sharon-rosner.webp",
     ),
     speaker.new(
+      name: "Adam Okoń",
+      title: "Forms Are Dead: Building Agentic Workflows in Ruby",
+      photo: "speakers/adam-okon.webp"
+    ),
+    speaker.new(
+      name: "Julik Tharkanov",
+      title: "Adventures in durable execution",
+      photo: "speakers/julik-tharkanov.webp"
+    ),
+    speaker.new(
+      name: "Kuba Suder",
+      title: "Introduction to AT Protocol",
+      photo: "speakers/kuba-suder.webp"
+    ),
+    speaker.new(
+      name: "Emiliano Della Casa",
+      title: "When REST is Not Enough: Implementing Alternative Protocols in Ruby on Rails",
+      photo: "speakers/emiliano-della-casa.webp"
+    ),
+    speaker.new(
+      name: "Ryan Townsend",
+      title: "No-build Utopia: Modern User Experiences with Rails & Web Standards",
+      photo: "speakers/ryan-townsend.webp"
+    ),
+    speaker.new(
       name: "Markus Schirp",
       title: "Setup and operation of mutation testing in agentic world (workshop)",
       photo: "speakers/markus-schirp.webp"
     ),
     speaker.new(
-      name: "Adam Okoń",
-      title: "Forms Are Dead: Building Agentic Workflows in Ruby",
-      photo: "speakers/adam-okon.webp"
-    )
-
+      name: "Greg Molnar",
+      title: "Securing Rails applications (workshop)",
+      photo: "speakers/greg-molnar.webp"
+    ),
   ]
 end
 
