@@ -2,7 +2,7 @@ dev: ## Start the development environment
 	@$(MAKE) -j16 nanoc css 
 
 nanoc: ## Nanoc live preview
-	@env bin/nanoc live -L -e development
+	@env bin/nanoc live -e development
 
 css: ## Compile CSS
 	@./bin/tailwindcss -i ./content/main.css -o ./output/main.css --watch

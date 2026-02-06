@@ -11,5 +11,5 @@ gem "webrick"
 gem "tailwindcss-ruby", "< 4"
 
 group :nanoc do
-  gem "guard-nanoc"
+  gem "nanoc-live"
 end
