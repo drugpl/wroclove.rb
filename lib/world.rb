@@ -75,6 +75,11 @@ def speakers
       title: "Securing Rails applications (workshop)",
       photo: "speakers/greg-molnar.webp"
     ),
+    speaker.new(
+      name: "Paweł Strzałkowski",
+      title: "Building a Production-Ready AI App: MCP & OAuth on Rails (workshop)",
+      photo: "speakers/pawel-strzalkowski.webp"
+    ),
   ]
 end
 
