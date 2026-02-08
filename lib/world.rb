@@ -52,7 +52,7 @@ def speakers
     ),
     speaker.new(
       name: "Kuba Suder",
-      title: "Introduction to AT Protocol",
+      title: "Building on Bluesky's AT Protocol with Ruby",
       photo: "speakers/kuba-suder.webp"
     ),
     speaker.new(
