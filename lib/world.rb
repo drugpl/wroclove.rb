@@ -80,6 +80,11 @@ def speakers
       title: "Building a Production-Ready AI App: MCP & OAuth on Rails (workshop)",
       photo: "speakers/pawel-strzalkowski.webp"
     ),
+    speaker.new(
+      name: "Andy Maleh",
+      title: "Building Rails SPAs in Frontend Ruby with Glimmer DSL for Web",
+      photo: "speakers/andy-maleh.webp"
+    ),
   ]
 end
 
