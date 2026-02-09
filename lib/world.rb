@@ -82,7 +82,7 @@ def speakers
     ),
     speaker.new(
       name: "Andy Maleh",
-      title: "Building Rails SPAs in Frontend Ruby with Glimmer DSL for Web",
+      title: "Building Rails SPAs in Frontend Ruby with Glimmer DSL for Web (workshop)",
       photo: "speakers/andy-maleh.webp"
     ),
   ]
