@@ -46,9 +46,9 @@ def speakers
       photo: "speakers/adam-okon.webp"
     ),
     speaker.new(
-      name: "Julik Tharkanov",
+      name: "Julik Tarkhanov",
       title: "Adventures in durable execution",
-      photo: "speakers/julik-tharkanov.webp"
+      photo: "speakers/julik-tarkhanov.webp"
     ),
     speaker.new(
       name: "Kuba Suder",
