@@ -351,7 +351,7 @@ def agenda_days
                        "Instead of multi-field forms, users paste unstructured content "\
                        "— like emails — into a single text field. The LLM extracts structured data, "\
                        "pre-fills the remaining fields, and saves hours of manual work monthly. "\
-                       "Join Adam's talk to discover why Why LLMs make traditional multi-field forms "\
+                       "Join Adam's talk to discover why LLMs make traditional multi-field forms "\
                        "obsolete and how you can integrate agentic workflows into existing Rails applications.",
           tags: ["talk", "ai", "agentic workflows", "rails"]
         )
