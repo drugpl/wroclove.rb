@@ -198,7 +198,10 @@ def agenda_days
           time: "10:00",
           title: "My core skill never was typing",
           author: "Markus Schirp",
-          description: "",
+          description: "Before today's AI code generators existed, Markus had already spent much of his career "\
+                       "building tools that reduced keystrokes and delegated well-defined development tasks to machines. "\
+                       "By sheer coincidence, these kinds of manually operated feedback loops and the hygienic, "\
+                       "easily instantiatable environments Markus created fit well into agent work.",
           tags: ["talk", "ruby"]
         ),
         slot.new(
