@@ -175,9 +175,10 @@ def agenda_days
         ),
         slot.new(
           time: "20:00",
-          title: "Party",
+          title: "Party at Pinta Wrocław",
           author: nil,
-          description: "Party place will be announced soon!",
+          description: "Beer fans (be it % or non-%) - Pinta, Polish craft brewery, has 24 taps waiting for you! "\
+                       "Address: Pinta Wrocław, Podwale 83 (the Ovo Building).",
           tags: ["party"]
         )
       ]
@@ -289,9 +290,10 @@ def agenda_days
         ),
         slot.new(
           time: "20:00",
-          title: "Party",
+          title: "Party at Klubokawiarnia Mleczarnia",
           author: nil,
-          description: "Party place will be announced soon!",
+          description: "wroclove.rb veterans know this place very well! Let's gather in the basement of this charming "\
+                       "spot localted in the heart of Wrocław. Address: Klubokawiarnia Mleczarnia, Pawła Włodkowica 5.",
           tags: ["party"]
         )
       ]
