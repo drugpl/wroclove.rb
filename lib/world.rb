@@ -359,6 +359,17 @@ def agenda_days
                        "Join Adam's talk to discover why LLMs make traditional multi-field forms "\
                        "obsolete and how you can integrate agentic workflows into existing Rails applications.",
           tags: ["talk", "ai", "agentic workflows", "rails"]
+        ),
+        slot.new(
+          time: "15:00",
+          title: "Free guided walking tour of Wrocław",
+          author: "",
+          description: "This year we're kicking off a guided walking tour of Wrocław's city centre. "\
+                       "If you'd like to explore the city's fascinating history and beautiful sights, "\
+                       "join us! The tour is limited to 35 participants and it's starting point "\
+                       "is at the conference venue (it should take around 1.5h). Sign up for "\
+                       "the walking tour using the same link as for the workshops registration.",
+          tags: ["guided tour", "exploring Wrocław"]
         )
       ]
     }
