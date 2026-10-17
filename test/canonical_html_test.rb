@@ -1,7 +1,10 @@
 require "minitest/autorun"
+require "mutant/minitest/coverage"
 require_relative "support/canonical_html"
 
 class CanonicalHtmlTest < Minitest::Test
+  cover "CanonicalHtml*"
+
   def test_writes_one_tag_or_text_per_line
     assert_body "<div><p>Hello</p></div>", <<~HTML
       <div>

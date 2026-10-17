@@ -16,5 +16,6 @@ end
 
 group :test do
   gem "minitest"
+  gem "mutant-minitest"
   gem "nokogiri"
 end

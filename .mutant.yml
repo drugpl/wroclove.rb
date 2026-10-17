@@ -1,0 +1,10 @@
+usage: opensource
+includes:
+  - test/support
+requires:
+  - canonical_html
+integration:
+  name: minitest
+matcher:
+  subjects:
+    - CanonicalHtml*
