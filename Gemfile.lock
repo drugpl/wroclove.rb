@@ -121,7 +121,7 @@ DEPENDENCIES
   webrick
 
 RUBY VERSION
-  ruby 4.0.1
+  ruby 4.0.7
 
 BUNDLED WITH
-  4.0.5
+  4.0.20
