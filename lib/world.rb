@@ -1,8 +1,4 @@
 use_helper Nanoc::Helpers::LinkTo
-use_helper Nanoc::Helpers::Rendering
-use_helper SpeakerPhotoHelper
-
-require "phlex"
 
 class PhlexFilter < Nanoc::Filter
   identifier :phlex

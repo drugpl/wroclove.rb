@@ -1,4 +1,4 @@
-<%= render "/header.*" %>
+<%= Header.new.call %>
 
 <div class="linear-gradient-r relative blurred-background-hero">
   <div class="container_">
@@ -117,7 +117,7 @@
   </div>
 </div>
 
-<%#= render "/speakers.*" %>
+<%#= Speakers.new.call %>
 
 <!-- <div class="linear-gradient-r flex items-center justify-center gap-8 py-12">
       <div class="container_">
@@ -260,7 +260,7 @@
         <!-- <div class="hidden font-inter text-3xl font-bold text-grey-400 md:flex">|</div>
             <div class="mt-4 text-2xl font-medium leading-snug text-grey-800 md:mt-0">Do you want to be on the list? Click here to support us!</div> -->
       </div>
-      <%= render "/supporters.*" %>
+      <%= Supporters.new.call %>
     </div>
   </div>
 </div>
@@ -270,8 +270,8 @@
     <div class="flex flex-col items-start justify-start md:flex-row md:items-center md:gap-12">
       <div class="text-4xl font-bold leading-normal text-grey-800">Our partners</div>
     </div>
-    <%= render "/partners.*" %>
+    <%= Partners.new.call %>
   </div>
 </div>
 
-<%= render "/footer.*" %>
+<%= Footer.new.call %>

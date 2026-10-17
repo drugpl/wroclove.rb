@@ -1,4 +1,4 @@
-<%= render "/header.*" %>
+<%= Header.new.call %>
 
 <div class="linear-gradient-r relative">
   <div class="container_ py-20">
@@ -126,8 +126,8 @@
     <div class="inline-flex flex-col items-center justify-start gap-12 sm:flex-row">
       <div class="font-overpass text-3xl font-bold leading-10 text-[#151314]">Thank you to our supporters</div>
     </div>
-    <%= render "/supporters.*" %>
+    <%= Supporters.new.call %>
   </div>
 </div>
 
-<%= render "/footer.*" %>
+<%= Footer.new.call %>
