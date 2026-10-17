@@ -2,3 +2,6 @@ output/
 tmp/nanoc/
 node_modules/
 crash.log
+.devenv*
+devenv.local.nix
+devenv.local.yaml
