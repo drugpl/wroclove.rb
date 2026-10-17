@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./layouts/**/*.{html,erb}", "./content/**/*.{html,erb,rb}", "./lib/**/*.rb"],
+  content: ["./layouts/**/*.{html,erb,rb}", "./content/**/*.{html,erb,rb}", "./lib/**/*.rb"],
   theme: {
     screens: {
       sm: "375px",
