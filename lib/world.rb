@@ -3,18 +3,18 @@ use_helper Nanoc::Helpers::LinkTo
 class PhlexFilter < Nanoc::Filter
   identifier :phlex
 
-  def run(content, params = {})
-    Class
-      .new(Phlex::HTML) do
-        include Nanoc::Helpers::Rendering
+  def run(content, params = {}) =
+    Page.new(content, filename, assigns[:content]).call
+end
 
-        def initialize(assigns) =
-          assigns.each { |k, v| instance_variable_set("@#{k}", v) }
-        define_method(:view_template) { eval(content) }
-      end
-      .new(assigns)
-      .call
+class Page < Phlex::HTML
+  def initialize(source, filename, content)
+    @source = source
+    @filename = filename
+    @content = content
   end
+
+  def view_template = instance_eval(@source, @filename)
 end
 
 def speakers

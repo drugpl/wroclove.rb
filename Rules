@@ -28,4 +28,4 @@ compile "/**/*" do
   write item.identifier.to_s
 end
 
-layout "/**/*", :erb
+layout "/default.*", :phlex
