@@ -1,5 +1,3 @@
-use_helper Nanoc::Helpers::LinkTo
-
 class PhlexFilter < Nanoc::Filter
   identifier :phlex
 

@@ -13,17 +13,6 @@ compile "/**/*.rb" do
   end
 end
 
-compile "/**/*.{html,erb}" do
-  filter :erb
-  layout "/default.*"
-
-  if item.identifier =~ "**/index.*"
-    write item.identifier.without_ext + ".html"
-  else
-    write item.identifier.without_ext + "/index.html"
-  end
-end
-
 compile "/**/*" do
   write item.identifier.to_s
 end
