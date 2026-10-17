@@ -13,3 +13,8 @@ gem "tailwindcss-ruby", "< 4"
 group :nanoc do
   gem "nanoc-live"
 end
+
+group :test do
+  gem "minitest"
+  gem "nokogiri"
+end
