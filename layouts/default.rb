@@ -1,0 +1,59 @@
+doctype
+html(lang: "en") do
+  head do
+    meta(charset: "UTF-8")
+    meta(name: "viewport", content: "width=device-width, initial-scale=1.0")
+    title { "wroclove.rb Ruby Conference 2027" }
+    meta(property: "og:type", content: "website")
+    meta(property: "og:url", content: "https://wrocloverb.com")
+    meta(property: "og:title", content: "wroclove.rb")
+    meta(
+      property: "og:description",
+      content:
+        "The place for Ruby professionals to confront ideas in a friendly atmosphere and mutual respect. Where covering deep topics is encouraged and meets a receptive audience. A relaxed, single‑track and not‑for‑profit Ruby conference run by the local Ruby community.",
+    )
+    meta(property: "og:image", content: "https://wrocloverb.com/og_image.png")
+    meta(property: "og:image:width", content: "1200")
+    meta(property: "og:image:height", content: "630")
+    link(rel: "icon", sizes: "192x192", href: "/touch-icon.png")
+    link(rel: "apple-touch-icon", href: "/touch-icon.png")
+    link(rel: "icon", href: "/favicon.png")
+    link(href: "/main.css", rel: "stylesheet")
+    link(rel: "preconnect", href: "https://fonts.googleapis.com")
+    link(
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: true,
+    )
+    link(
+      href:
+        "https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap",
+      rel: "stylesheet",
+    )
+    link(
+      href:
+        "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+      rel: "stylesheet",
+    )
+    link(rel: "me", href: "https://ruby.social/@wrocloverb")
+    # link(rel: "preload", href: "https://prod.spline.design/hFXBmUjHZDirWQM2/scene.splinecode", as: "fetch")
+
+    script { raw safe(<<~JS) }
+      function toggleNavigation() {
+        ["navigation", "navigation-open", "navigation-close"].forEach((id) => document.getElementById(id).classList.toggle("hidden"));
+      }
+    JS
+    # script(type: "module", src: "https://unpkg.com/@splinetool/viewer/build/spline-viewer.js")
+    script(
+      async: true,
+      "data-uid": "0430aa4d7d",
+      src: "https://wrocloverb.kit.com/0430aa4d7d/index.js",
+    )
+    style { raw safe(<<~CSS) }
+      .grecaptcha-badge {
+        visibility: hidden;
+      }
+    CSS
+  end
+  body(class: "font-overpass antialiased") { raw safe(@content) }
+end

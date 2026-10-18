@@ -12,4 +12,11 @@ gem "tailwindcss-ruby", "< 4"
 
 group :nanoc do
   gem "nanoc-live"
+  gem "phlex"
+end
+
+group :test do
+  gem "minitest"
+  gem "mutant-minitest"
+  gem "nokogiri"
 end
