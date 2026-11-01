@@ -1,6 +1,19 @@
-use_helper Nanoc::Helpers::LinkTo
-use_helper Nanoc::Helpers::Rendering
-use_helper SpeakerPhotoHelper
+class PhlexFilter < Nanoc::Filter
+  identifier :phlex
+
+  def run(content, params = {}) =
+    Page.new(content, filename, assigns[:content]).call
+end
+
+class Page < Phlex::HTML
+  def initialize(source, filename, content)
+    @source = source
+    @filename = filename
+    @content = content
+  end
+
+  def view_template = instance_eval(@source, @filename)
+end
 
 def speakers
   speaker = Data.define(:name, :title, :photo)

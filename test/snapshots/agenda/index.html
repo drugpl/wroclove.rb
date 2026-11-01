@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+      wroclove.rb Ruby Conference 2027
+    </title>
+    <meta content="website" property="og:type">
+    <meta content="https://wrocloverb.com" property="og:url">
+    <meta content="wroclove.rb" property="og:title">
+    <meta content="The place for Ruby professionals to confront ideas in a friendly atmosphere and mutual respect. Where covering deep topics is encouraged and meets a receptive audience. A relaxed, single‑track and not‑for‑profit Ruby conference run by the local Ruby community." property="og:description">
+    <meta content="https://wrocloverb.com/og_image.png" property="og:image">
+    <meta content="1200" property="og:image:width">
+    <meta content="630" property="og:image:height">
+    <link href="/touch-icon.png" rel="icon" sizes="192x192">
+    <link href="/touch-icon.png" rel="apple-touch-icon">
+    <link href="/favicon.png" rel="icon">
+    <link href="/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://ruby.social/@wrocloverb" rel="me">
+    <script>
+      function toggleNavigation() { ["navigation", "navigation-open", "navigation-close"].forEach((id) => document.getElementById(id).classList.toggle("hidden")); }
+    </script>
+    <script async="" data-uid="0430aa4d7d" src="https://wrocloverb.kit.com/0430aa4d7d/index.js">
+    </script>
+    <style>
+      .grecaptcha-badge { visibility: hidden; }
+    </style>
+  </head>
+  <body class="antialiased font-overpass">
+    <div class="bg-white border-b border-red-logo/30 gap-40 h-24 items-center justify-center pointer-events-auto py-5">
+      <div class="container_">
+        <div class="basis-0 flex gap-6 grow h-14 items-center justify-between shrink">
+          <div class="flex flex-col grow items-start justify-self-start md:w-40">
+            <a href="/">
+              <img class="h-6" src="/logo.svg">
+            </a>
+          </div>
+          <button class="h-14 md:hidden w-14" id="navigation-open" onclick="toggleNavigation()">
+            <svg fill="none" height="56" viewBox="0 0 56 56" width="56" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 1H55.5V56H0.5V1Z" fill="black">
+              </path>
+              <path d="M0.5 1H55.5V56H0.5V1Z" stroke="black">
+              </path>
+              <path d="M37 24.25H19C18.59 24.25 18.25 23.91 18.25 23.5C18.25 23.09 18.59 22.75 19 22.75H37C37.41 22.75 37.75 23.09 37.75 23.5C37.75 23.91 37.41 24.25 37 24.25Z" fill="white">
+              </path>
+              <path d="M37 29.25H19C18.59 29.25 18.25 28.91 18.25 28.5C18.25 28.09 18.59 27.75 19 27.75H37C37.41 27.75 37.75 28.09 37.75 28.5C37.75 28.91 37.41 29.25 37 29.25Z" fill="white">
+              </path>
+              <path d="M37 34.25H19C18.59 34.25 18.25 33.91 18.25 33.5C18.25 33.09 18.59 32.75 19 32.75H37C37.41 32.75 37.75 33.09 37.75 33.5C37.75 33.91 37.41 34.25 37 34.25Z" fill="white">
+              </path>
+            </svg>
+          </button>
+          <button class="h-14 hidden md:hidden w-14" id="navigation-close" onclick="toggleNavigation()">
+            <svg fill="none" height="56" viewBox="0 0 56 56" width="56" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 0.5H55.5V55.5H0.5V0.5Z" fill="black">
+              </path>
+              <path d="M0.5 0.5H55.5V55.5H0.5V0.5Z" stroke="black">
+              </path>
+              <path d="M22.4 35L21 33.6L26.6 28L21 22.4L22.4 21L28 26.6L33.6 21L35 22.4L29.4 28L35 33.6L33.6 35L28 29.4L22.4 35Z" fill="white">
+              </path>
+            </svg>
+          </button>
+          <div class="font-normal gap-10 hidden items-center justify-start leading-normal md:flex text-black text-md">
+            <a class="font-normal leading-normal text-base text-black" href="/participants">
+              For participants
+            </a>
+            <a class="font-normal leading-normal text-base text-black" href="/supporters">
+              For supporters
+            </a>
+            <a class="font-normal leading-normal text-base text-black" data-formkit-toggle="0430aa4d7d" href="https://wrocloverb.kit.com/0430aa4d7d">
+              Newsletter
+            </a>
+            <a href="mailto:all@wrocloverb.com">
+              Contact
+            </a>
+          </div>
+          <div class="button_ hidden md:flex">
+            <a class="cursor-default font-bold leading-relaxed text-lg text-white" href="#">
+              CFP opens soon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_ hidden pointer-events-auto" id="navigation">
+      <div class="bg-white flex flex-col font-normal gap-8 items-start justify-start leading-normal px-8 py-12 text-black text-md">
+        <a class="font-normal leading-normal text-base text-black" href="/participants" onclick="toggleNavigation()">
+          For participants
+        </a>
+        <a class="font-normal leading-normal text-base text-black" href="/supporters" onclick="toggleNavigation()">
+          For supporters
+        </a>
+        <a class="font-normal leading-normal text-base text-black" data-formkit-toggle="0430aa4d7d" href="https://wrocloverb.kit.com/0430aa4d7d" onclick="toggleNavigation()">
+          Newsletter
+        </a>
+        <a href="mailto:all@wrocloverb.com">
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="linear-gradient-r relative">
+      <div class="container_ py-20">
+        <div class="flex flex-col gap-8 items-start justify-center lg:max-w-[720px] py-8 self-stretch">
+          <div class="flex flex-col gap-5 items-start justify-start self-stretch z-10">
+            <div class="flex flex-col gap-5 items-start justify-start self-stretch">
+              <div class="flex flex-col gap-3 items-start justify-start self-stretch">
+                <div class="font-bold leading-[1.1] md:leading-[1.125] md:text-5xl md:tracking-tight pointer-events-auto self-stretch text-[40px] text-grey-logo tracking-tighter uppercase">
+                  AGENDA
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_">
+      <div class="flex gap-4 items-center justify-center mt-10 outline outline-1 outline-black outline-offset-[-1px] px-6 py-3">
+        <p class="font-medium text-2xl text-black">
+          Register for the workshops and free guided tour of Wrocław&nbsp;
+          <b>
+            <a class="underline" href="https://buytickets.at/wrocloverb/1903580" target="_blank">
+              here
+            </a>
+            !
+          </b>
+        </p>
+      </div>
+      <div class="flex-col gap-8 inline-flex items-start justify-start max-w-[1360px] mt-16 w-full">
+        <div class="gap-5 inline-flex items-center justify-start self-stretch">
+          <div class="flex gap-4 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-6 py-3">
+            <div class="font-bold font-overpass justify-center leading-loose text-black text-lg">
+              17 April
+            </div>
+          </div>
+        </div>
+        <div class="border-b border-red-logo/30 gap-6 inline-flex items-start justify-start md:gap-20 py-3 w-full">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            TIME
+          </div>
+          <div class="flex-col gap-4 inline-flex items-start justify-start">
+            <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-36">
+              SESSION
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col gap-16 inline-flex items-start justify-start max-w-[1360px] mt-8 w-full">
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            13:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  REGISTRATION
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Registration
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Registration is open from 13:00 to 14:00 at the venue — Institute of Computer Science, University of Wrocław, Fryderyka Joliot-Curie 15.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            14:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WORKSHOP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TESTING
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Setup and operation of mutation testing in agentic world
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Markus Schirp
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                AI writes your code. AI writes your tests. But who tests the tests? How do you know your tests actually test something? Markus is the creator of Mutant — a mutation testing tool for Ruby. In this workshop, he will guide you through setting up mutation testing and using it to truly verify your Ruby code.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            14:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WORKSHOP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  SECURITY
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Securing Rails applications
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Greg Molnar
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Eager to elevate your security skills? This workshop is designed specifically for developers who aim to build robust, secure Rails applications! Greg, OSCP Certified Penetration Tester and a Ruby Developer since 2010, will bring his deep expertise to help you understand and apply best practices to secure your Rails applications.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            14:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WORKSHOP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  AI
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  MCP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  OAUTH
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Building a Production-Ready AI App: MCP &amp; OAuth on Rails
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Paweł Strzałkowski
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Make all your Rails applications AI-native. Learn a production-ready method for adding Model Context Protocol to your Rails apps — start-up or legacy. This workshop brings the important piece that is missing in Rails + MCP integration — OAuth2.1 flow that lets an LLM act with user's context and permissions. Adding authorization is a highly needed skill, not covered by the existing tools but is required for production solutions. Paweł is a a veteran Rails developer, a CTO and a vetted conference speaker who combines his passion for AI with deep Rails experience.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            14:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WORKSHOP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WEB DEVELOPMENT
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Building Rails SPAs in Frontend Ruby with Glimmer DSL for Web
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Andy Maleh
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Glimmer DSL for Web is a Ruby Frontend Framework for Rails that won a Fukuoka Prefecture Future IT Initiative 2025 award from Matz. It is the missing piece of the puzzle that finally enables devs to write the Frontend of Rails web apps in Ruby too. This workshops will cover its features and demo samples.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            17:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  JRUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  JRuby: Professional-Grade Ruby
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Charles Nutter
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Rubyists face many challenges these days, from scaling applications to thousands of users to handling enormous datasets to integrating with an AI-obsessed world. How can we keep Ruby moving forward and the Ruby community strong and healthy? The answer is JRuby! Charles has been working full time on JRuby for the past 20 years, trying to bring more opportunities to the Ruby world. In his talk, he will show how JRuby can help you bring true parallelism, pauseless garbage collection, and JIT optimizations to your Ruby and Rails applications. Get ready to level up your Ruby with JRuby!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            18:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WEB STANDARDS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  No-build Utopia: Modern User Experiences with Rails &amp; Web Standards
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Ryan Townsend
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Teams often reflexively reach for React/Vue, adding build complexity and maintenance overhead. But modern Web Platform APIs now deliver fluid, interactive experiences natively. No framework, no build. Let's explore a progressive approach to building modern UIs in Rails without the JavaScript baggage. With 20 years of experience developing with Rails, Ryan will share how much the web can do on its own these days.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            20:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  PARTY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Party at Pinta Wrocław
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Beer fans (be it % or non-%) - Pinta, Polish craft brewery, has 24 taps waiting for you! Address: Pinta Wrocław, Podwale 83 (the Ovo Building).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col gap-8 inline-flex items-start justify-start max-w-[1360px] mt-16 w-full">
+        <div class="gap-5 inline-flex items-center justify-start self-stretch">
+          <div class="flex gap-4 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-6 py-3">
+            <div class="font-bold font-overpass justify-center leading-loose text-black text-lg">
+              18 April
+            </div>
+          </div>
+        </div>
+        <div class="border-b border-red-logo/30 gap-6 inline-flex items-start justify-start md:gap-20 py-3 w-full">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            TIME
+          </div>
+          <div class="flex-col gap-4 inline-flex items-start justify-start">
+            <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-36">
+              SESSION
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col gap-16 inline-flex items-start justify-start max-w-[1360px] mt-8 w-full">
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            9:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  REGISTRATION
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Registration
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Registration is open from 9:00 to 10:00 at the venue — Institute of Computer Science, University of Wrocław, Fryderyka Joliot-Curie 15.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            10:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  My core skill never was typing
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Markus Schirp
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Before today's AI code generators existed, Markus had already spent much of his career building tools that reduced keystrokes and delegated well-defined development tasks to machines. By sheer coincidence, these kinds of manually operated feedback loops and the hygienic, easily instantiatable environments Markus created fit well into agent work.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            11:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  EVENT SOURCING
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Event Sourcing and Actor model in Ruby
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Ismael Celis
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Let's explore Event Sourcing and the Actor model in Ruby, and how this paradigm can open up entire mental models to think about problems, including concurrency as a domain-level concept, and embracing the eventually-consistent relationship between reality and the code designed to represent it. Ismael has been thinking about and exploring these ideas since 2016, both in Ruby and other stacks. In his talk, he will show how Event Sourcing can provide a cohesive, end-to-end programming model centred around workflows, where a small set of building blocks can enable auditable data, durable execution and reactive UIs by default. All with the simplicity of idiomatic Ruby.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            12:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  NEURAL NETWORKS
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Accidentally building a neural network — A Ruby product recommendation journey
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Nicolò Rebughini
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Machine Learning often feels like a black box reserved for Python data scientists. But what happens when you solve a complex product recommendation problem using Plain Old Ruby Objects, only to discover you've unknowingly recreated the architecture of a Neural Network? Nicolò will deconstruct a real-world recommendation engine that processes thousands of orders per week to prove that you do not not need heavy external services to solve AI problems — you need Ruby!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            13:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  LUNCH BREAK
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Lunch break
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Let us all have a lunch break, grab something to eat around the venue, and get ready for the afternoon sessions.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            15:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  PROTOCOLS
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  GRPC
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  MQTT
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  MCP
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  When REST is Not Enough: Implementing Alternative Protocols in Ruby on Rails
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Emiliano Della Casa
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Stop forcing REST into every use case. Learn when and how to leverage gRPC for performance, MQTT for IoT, and MCP for AI integration within Ruby on Rails. For over a decade, REST has been the undisputed king of Rails communication. While it remains the standard for web APIs, modern engineering challenges (ranging from high-frequency microservices to IoT deployments and the rise of AI agents) often push HTTP/JSON to its breaking point. Emiliano has been working with Rails for nearly 20 years and spent significant time benchmarking and implementing non-RESTful interfaces in production Ruby environments. This session provides a technical deep dive into how Ruby on Rails can transcend the traditional request-response cycle by integrating three powerful alternatives: gRPC, MQTT and MCP.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            16:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  PERFORMANCE
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  CONCURRENCY
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  UringMachine — High Performance Concurrency for Ruby Using io_uring
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Sharon Rosner
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                UringMachine is a new Ruby gem that provides a fast low-level API for building concurrent applications, harnessing the Linux io_uring interface. Let's see how io_uring works, understand the design of UringMachine, and the performance advantages it brings for Ruby web apps. Sharon is a long-time Ruby programmer, and the author of multiple open-source Ruby gems, including Sequel, Extralite, Polyphony, and Papercraft. He is a recipient of a Japanese Ruby Association grant for working on UringMachine. If you are looking for an expert on this topic — you just found one!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            17:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  DEPLOYMENT
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  KAMAL
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Kamal is not harder than your PaaS
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Josef Strzibny
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Think implementing Kamal in your app is complicated? Josef will prove that it is actually no harder than using your favorite PaaS. Josef is a long time programmer previously working with Ruby/Rails, Elixir/Phoenix and as a Linux package manager and the author of Kamal handbook — the first ever book on Kamal. With this expertese, Josef will present everything you need to know about Kamal.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            18:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  LIGHTNING TALKS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Lightning talks
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Lightning talks are a great way to learn about new ideas and share your thoughts. Throughout the day, we encourage you to add your topic to the whiteboard if you'd like to present.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            20:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  PARTY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Party at Klubokawiarnia Mleczarnia
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                wroclove.rb veterans know this place very well! Let's gather in the basement of this charming spot localted in the heart of Wrocław. Address: Klubokawiarnia Mleczarnia, Pawła Włodkowica 5.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col gap-8 inline-flex items-start justify-start max-w-[1360px] mt-16 w-full">
+        <div class="gap-5 inline-flex items-center justify-start self-stretch">
+          <div class="flex gap-4 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-6 py-3">
+            <div class="font-bold font-overpass justify-center leading-loose text-black text-lg">
+              19 April
+            </div>
+          </div>
+        </div>
+        <div class="border-b border-red-logo/30 gap-6 inline-flex items-start justify-start md:gap-20 py-3 w-full">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            TIME
+          </div>
+          <div class="flex-col gap-4 inline-flex items-start justify-start">
+            <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-36">
+              SESSION
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col gap-16 inline-flex items-start justify-start max-w-[1360px] mt-8 w-full">
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            9:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  REGISTRATION
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Registration
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Registration is open from 9:00 to 10:00 at the venue — Institute of Computer Science, University of Wrocław, Fryderyka Joliot-Curie 15.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            10:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  WORKFLOWS
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  DATABASES
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Adventures in durable execution
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Julik Tarkhanov
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Workflow engines are everywhere now, but Rails still does not have a good one. For more than a year Julik has been exploring workflows and durable execution in Rails — the likes of Vercel &quot;use workflow&quot;, Temporal and DBos. As a result, he has discovered that ActiveJob is an inadequate tool for the purpose — even with &quot;job continuations&quot; introduced in Rails natively it is still subpar. In his talk, Julik will present a solution that integrates well with Rails without having the user do too much — a Rails-based gem for workflows.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            11:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  AT PROTOCOL
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Building on Bluesky's AT Protocol with Ruby
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Kuba Suder
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Ever heard of Authenticated Transfer Protocol? If you have a Bluesky social media account, you're already using it every day. Kuba discovered Bluesky and the AT Protocol in 2023 and he got so hooked that he has been spending all his time building things on it since then. With his curiosity about the AT Protocol, Kuba developed many Bluesky-related open source projects and tools and he takes the stage at wroclove.rb to explore the protocol in depth.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            12:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RACTORS
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RUBY
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Rubyana Gems and the Ractorous Rubetta Stones!
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Louis Antonopoulos
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                What if we had a severly time-constricted and CPU-intensive task that we wanted to solve with Ruby? How might we tackle it? Using the fictional discovery of The Rubetta Stones as our plot driver, and an hourglass that is rapidly running out, we will embark on a journey that leverages the power of Ractors alongside a cheeky AI assistant (trained in Ruby, linguistics, and cryptanalysis) to face this unprecedented challenge. The goal? Break 5 ciphers in 60 seconds to unlock the ultimate secret of the Rubetta Keystone. Join Louis on a whimsical adventure to learn about Ractors while collaborating with an AI for assistance with the linguistic tools that will help us unlock the mystery of The Rubetta Stones!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            13:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  TALK
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  AI
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  AGENTIC WORKFLOWS
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  RAILS
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Forms Are Dead: Building Agentic Workflows in Ruby
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                  Adam Okoń
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                Imagine replacing complex data entry forms with an agentic workflow. Instead of multi-field forms, users paste unstructured content — like emails — into a single text field. The LLM extracts structured data, pre-fills the remaining fields, and saves hours of manual work monthly. Join Adam's talk to discover why LLMs make traditional multi-field forms obsolete and how you can integrate agentic workflows into existing Rails applications.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-start flex-wrap gap-6 inline-flex items-start justify-start md:gap-20 self-stretch">
+          <div class="font-inter font-medium justify-start leading-loose text-black text-lg w-20">
+            15:00
+          </div>
+          <div class="flex-1 flex-col gap-4 inline-flex items-start justify-start">
+            <div class="gap-2.5 inline-flex items-center justify-start">
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  GUIDED TOUR
+                </div>
+              </div>
+              <div class="bg-black flex gap-2.5 items-center justify-center outline outline-1 outline-black outline-offset-[-1px] px-2 py-1" data-size="S">
+                <div class="font-inter font-medium justify-start leading-tight text-sm text-white">
+                  EXPLORING WROCŁAW
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start justify-start self-stretch">
+              <div class="flex flex-col items-start justify-start w-full">
+                <div class="font-inter font-medium justify-start leading-10 text-2xl text-black">
+                  Free guided walking tour of Wrocław
+                </div>
+                <div class="font-inter font-normal justify-start leading-normal self-stretch text-base text-red-100 underline">
+                </div>
+              </div>
+              <div class="font-inter font-medium justify-start leading-normal self-stretch text-base text-grey-600">
+                This year we're kicking off a guided walking tour of Wrocław's city centre. If you'd like to explore the city's fascinating history and beautiful sights, join us! The tour is limited to 35 participants and it's starting point is at the conference venue (it should take around 1.5h). Sign up for the walking tour using the same link as for the workshops registration.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 items-center justify-center mt-10 outline outline-1 outline-black outline-offset-[-1px] px-6 py-3">
+        <p class="font-medium text-2xl text-black">
+          Register for the workshops and free guided tour of Wrocław&nbsp;
+          <b>
+            <a class="underline" href="https://buytickets.at/wrocloverb/1903580" target="_blank">
+              here
+            </a>
+            !
+          </b>
+        </p>
+      </div>
+    </div>
+    <div class="bg-black gap-4 inline-flex items-center justify-center mt-12 p-12 self-stretch w-full">
+      <div class="container_">
+        <div class="flex flex-col items-end justify-between max-w-[1360px] md:flex-row">
+          <div class="flex-col gap-3 inline-flex items-start justify-center">
+            <div class="font-bold font-overpass justify-start leading-[48px] text-3xl text-white">
+              Liked the agenda?
+            </div>
+            <div class="font-inter font-medium justify-start leading-normal text-base text-grey-200">
+              Don't miss out on the opportunity to attend the conference - tickets as still available on sale. Get yourself one and see you in Wrocław!
+            </div>
+          </div>
+          <a class="bg-white button_ font-bold md:ml-6 md:mt-0 mt-4 mx-auto pointer-events-auto text-black text-center text-lg w-full z-10" href="https://wrocloverb2026.konfeo.com/en/groups">
+            Buy tickets
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-start linear-gradient-l pointer-events-auto py-10">
+      <div class="container_">
+        <div class="flex flex-col gap-6 items-start justify-between md:flex-row md:items-center">
+          <div class="h-6">
+            <img class="h-6 self-stretch" src="/logo.svg">
+          </div>
+          <div class="flex flex-col gap-6 justify-start md:flex-row md:gap-10 md:items-center">
+            <a class="font-normal leading-normal text-black text-md" data-formkit-toggle="0430aa4d7d" href="https://wrocloverb.kit.com/0430aa4d7d">
+              Newsletter
+            </a>
+            <a class="font-normal leading-normal text-black text-md" href="mailto:all@wrocloverb.com">
+              Contact
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-between md:flex-row md:items-center mt-8 self-stretch">
+          <div class="flex gap-6 items-center justify-start">
+            <div class="flex gap-4 items-center justify-center py-3">
+              <a class="font-normal leading-normal text-grey-600 text-md" href="https://docs.google.com/document/d/1RzFxAu0yflAEPsKHzSE5dmGowl5LAih4W6j3_CLAohY/edit?usp=sharing">
+                Terms of service
+              </a>
+            </div>
+            <div class="flex gap-4 items-center justify-center py-3">
+              <a class="font-normal leading-normal text-grey-600 text-md" href="https://docs.google.com/document/d/1UQIeUTJeW3qbvzB8Sx-G-Ow0qbM4GgzMKkQk66UBz5M/edit?usp=sharing">
+                Code of conduct
+              </a>
+            </div>
+          </div>
+          <div class="fill-grey-600 flex gap-6 items-center justify-start md:mt-0 mt-4">
+            <div class="h-6 w-6">
+              <a href="https://discord.com/invite/UYMestkPNc">
+                <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://www.youtube.com/user/wrocloverb">
+                <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://ruby.social/@wrocloverb">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://bsky.app/profile/wrocloverb.com">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://x.com/wrocloverb">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://www.linkedin.com/company/wroclove-rb/">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <div class="h-6 w-6">
+              <a href="https://www.facebook.com/wroclove.rb">
+                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex mt-8">
+          <p class="font-normal leading-normal text-xs">
+            This site is protected by reCAPTCHA and the Google&nbsp;
+            <a class="text-grey-600" href="https://policies.google.com/privacy">
+              Privacy Policy
+            </a>
+            &nbsp;and&nbsp;
+            <a class="text-grey-600" href="https://policies.google.com/terms">
+              Terms of Service
+            </a>
+            &nbsp;apply.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
